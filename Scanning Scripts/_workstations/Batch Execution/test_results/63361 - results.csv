@@ -1,0 +1,2747 @@
+"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
+"BDSCWKNAEASC1A3","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:49:29 PM"
+"BDSCNBN160SA312","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:49:33 PM"
+"BDSCWKN160S45E1","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:50:05 PM"
+"BDSCNBN160S131C","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:53:52 PM"
+"BDSCNBN160S1E1D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:56:55 PM"
+"BDSCNBNDET5F07D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:56:56 PM"
+"BDSCNBN160SA575","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:56:57 PM"
+"BDSCNBN160SA41F","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 12:58:07 PM"
+"BDSCNBN160S6F03","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:58:10 PM"
+"BDSCNBN160SAACF","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:58:34 PM"
+"BDSCNBN160SB05A","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 12:58:36 PM"
+"BDSCNBN160SFFD5","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:58:38 PM"
+"BDSCNBN160SA5CA","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:58:39 PM"
+"BDSCWKN160S6C51","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:58:40 PM"
+"BDSCNBN160SB21A","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:58:42 PM"
+"BDSCNBN160S9DDF","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 12:58:42 PM"
+"BDSCNBN160SAF38","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:58:48 PM"
+"BDSCNBN160SA31B","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:59:39 PM"
+"BDSCNBN160SADE1","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 12:59:44 PM"
+"BDSCNBNCMDTCABB","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:01:59 PM"
+"BDSCNBNTFMDA1B0","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:00 PM"
+"BDSCNBNMFMD66F3","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:19 PM"
+"BDSCWKNHRC028F4","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:20 PM"
+"BDSCNBNTFMDD8CC","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:20 PM"
+"BDSCNBNCMDTA567","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:29 PM"
+"BDSCNBN1LNO8B53","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:29 PM"
+"BDSCNBNEACSF01F","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:33 PM"
+"BDSCNBN1FLE469F","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:33 PM"
+"BDSCNBNTFMDA4AD","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:34 PM"
+"BDSCNBN1FLE105F","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:34 PM"
+"BDSCWKNAEAS7064","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:34 PM"
+"BDSCNBNTFMD4C4C","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:34 PM"
+"BDSCNBNCMDT8CB4","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:34 PM"
+"BDSCNBNTFMD4761","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:34 PM"
+"BDSCNBNTFMD7747","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:34 PM"
+"BDSCNBNEACSE552","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:34 PM"
+"BDSCNBN1FLEB5E5","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:35 PM"
+"BDSCWKNPAE41163","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:34 PM"
+"BDSCNBNTFMD27BB","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:35 PM"
+"BDSCNBN1FLE6D41","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:35 PM"
+"BDSCWKNAEAGBE94","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:35 PM"
+"BDSCWKNAEAGCBAB","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:35 PM"
+"BDSCWKN1FLE7C22","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:36 PM"
+"BDSCNBNTFMD5DE0","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:36 PM"
+"BDSCWKNAEAGCC56","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:36 PM"
+"BDSCNBN160SE309","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:36 PM"
+"BDSCNBNTFMD0CCD","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:37 PM"
+"BDSCNBNTFMD8BBA","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:37 PM"
+"BDSCNBNEACSE36F","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:37 PM"
+"BDSCNBNARC18AF9","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:37 PM"
+"BDSCNBN1FLEDD12","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:37 PM"
+"BDSCNBN160S4395","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:37 PM"
+"BDSCNBNTFMD0A25","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:37 PM"
+"BDSCNBN160SA2D2","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:38 PM"
+"BDSCNBNTFMD9951","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:38 PM"
+"BDSCNBNCJTF8D6D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:38 PM"
+"BDSCNBNEACSE55D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:38 PM"
+"BDSCNBNTFMD8A0D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:39 PM"
+"BDSCNBNMLOS8A3E","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:39 PM"
+"BDSCNBN1FLEC6A4","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:41 PM"
+"TAJIWKNB56114B2","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:41 PM"
+"BDSCNBNTFMD8B3A","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:41 PM"
+"BDSCNBNEACSEFCC","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:42 PM"
+"BDSCWKN1MCT89BD","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:44 PM"
+"BDSCNBN1FLEC472","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:45 PM"
+"BDSCWKN160SC144","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:45 PM"
+"BDSCNBNTFMD7BDB","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:47 PM"
+"BDSCNBN1FLE5602","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:50 PM"
+"BDSCNBN1FLE7581","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:50 PM"
+"BDSCNBN1FLEBE35","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:50 PM"
+"BDSCNBNEACSE39C","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:51 PM"
+"BDSCNBNTFMDD6C3","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:52 PM"
+"BDSCNBN1FLE082C","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:52 PM"
+"BDSCWKN160SA53D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:53 PM"
+"BDSCNBN1FLE109F","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:53 PM"
+"BDSCNBN1FLE93C1","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:53 PM"
+"BDSCNBN1FLE6D24","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:53 PM"
+"BDSCNBN1FLE40E4","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:53 PM"
+"BDSCWKNCUST2BFE","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:53 PM"
+"BDSCNBNTFMDBB99","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:53 PM"
+"BDSCWKN1MCTBCF6","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:54 PM"
+"BDSCNBNCJTF8AF8","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:54 PM"
+"BDSCNBNTFMDC967","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:54 PM"
+"BDSCNBNMCTF96EF","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:55 PM"
+"BDSCNBN1FLEBEF8","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:55 PM"
+"BDSCNBNTFMD8B83","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:55 PM"
+"BDSCNBN1FLEE740","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:55 PM"
+"BDSCNBN1FLE9BDF","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:55 PM"
+"BDSCNBNCJTFFC85","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:55 PM"
+"BDSCNBNCMDTA3AB","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:56 PM"
+"BDSCNBNCMDT8CFC","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:56 PM"
+"BDSCNBNTFMD7946","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:56 PM"
+"BDSCNBNTFMD4C4D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:56 PM"
+"BDSCNBNMCTF2547","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:56 PM"
+"BDSCNBNTFMDA41F","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:56 PM"
+"BDSCNBN1FLEDF67","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:56 PM"
+"BDSCNBNTFMD9697","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:57 PM"
+"BDSCNBSTFMD83F2","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:57 PM"
+"BDSCWKN1MCTE1F2","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:57 PM"
+"BDSCNBN1FLE6D1D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:57 PM"
+"BDSCNBNTFMD7886","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:57 PM"
+"BDSCNBNTFMD77DA","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:02:57 PM"
+"BDSCNBNPAE4992A","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:58 PM"
+"BDSCNBNTFMD827B","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:58 PM"
+"BDSCNBN1FLE3631","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:58 PM"
+"BDSCNBNTFMD7801","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:58 PM"
+"BDSCNBNTFMD4C06","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:57 PM"
+"BDSCNBNTFMD78A6","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:59 PM"
+"BDSCNBN1FLE082D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:59 PM"
+"BDSCNBN1FLE190D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:02:59 PM"
+"BDSCNBN160SAF2D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:00 PM"
+"BDSCNBNTFMD51B3","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:00 PM"
+"BDSCNBNTFMD6960","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:00 PM"
+"BDSCNBNTFMD76CE","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:01 PM"
+"BDSCNBNTFMD718D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:02 PM"
+"BDSCNBNCMDT2CC5","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:02 PM"
+"BDSCNBNCJ6305BC","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:02 PM"
+"BDSCNBNTFMD8D9A","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:02 PM"
+"BDSCNBNCMDTD151","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:03:03 PM"
+"BDSCNBN1FLE6674","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:03 PM"
+"BDSCNBNARC1A590","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:03 PM"
+"BDSCNBNTFHU40C3","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:03:08 PM"
+"BDSCWKN1FLE7962","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:08 PM"
+"BDSCWKNAEAGBED9","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:19 PM"
+"BDSCNBN1FLE8AC2","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Fail","5-21-2020 1:03:25 PM"
+"BDSCNBNTFMD7933","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:26 PM"
+"BDSCNBNCJTF8B5C","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","5-21-2020 1:03:34 PM"
+"BDSCNBN160SA575","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DOD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_ADMIN
+The command completed successfully.
+
+","Pass","5-27-2020 9:13:24 AM"
+"BDSCWKNAEASC1A3","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Pass","5-27-2020 9:17:35 AM"
+"BDSCNBNDET5F07D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Pass","5-27-2020 9:17:36 AM"
+"BDSCNBN160S1E1D","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DOD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_ADMIN
+The command completed successfully.
+
+","Pass","5-27-2020 9:17:43 AM"
+"BDSCNBN160S131C","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_ADMIN
+The command completed successfully.
+
+","Pass","5-27-2020 9:20:34 AM"
+"BDSCNBN160S6F03","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Pass","5-27-2020 9:21:26 AM"
+"BDSCNBN160S9DDF","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_ADMIN
+The command completed successfully.
+
+","Pass","5-27-2020 9:22:13 AM"
+"BDSCNBN160SB21A","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_ADMIN
+The command completed successfully.
+
+","Pass","5-27-2020 9:22:58 AM"
+"BDSCWKN160SCFFB","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","Pass","5-27-2020 9:23:42 AM"

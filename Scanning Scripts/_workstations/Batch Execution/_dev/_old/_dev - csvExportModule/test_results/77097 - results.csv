@@ -1,0 +1,2 @@
+"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
+"BDSCNBNCMDTA3AB","77097","Get-ProcessMitigation -System Cfg.Enable","System.Object[]","NOTSET","Pass","3-16-2020 11:07:18 PM"

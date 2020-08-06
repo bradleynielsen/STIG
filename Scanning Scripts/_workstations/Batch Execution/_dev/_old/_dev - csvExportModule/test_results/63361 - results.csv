@@ -1,0 +1,20 @@
+"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
+"BDSCNBNCMDTA3AB","63361","Get-AppLockerPolicy EnforcementMode","Alias name     administrators
+Comment        
+
+Members
+
+-------------------------------------------------------------------------------
+DoD_Admin
+SWA\IRQ-GS-BDSC-Help_Desk
+SWA\IRQ-GS-BDSC-IA
+SWA\IRQ-GS-BDSC-IMO
+SWA\IRQ-GS-BDSC-NA
+SWA\IRQ-GS-BDSC-Site_Admin
+SWA\SWA Domain Service Accounts
+SWA\SWA Domain Workstation Admins
+SWA_AD
+SWA_Admin
+The command completed successfully.
+
+","","Pass","3-16-2020 10:58:29 PM"

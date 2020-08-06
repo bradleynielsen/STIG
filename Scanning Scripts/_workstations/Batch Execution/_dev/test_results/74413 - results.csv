@@ -1,0 +1,3 @@
+"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
+"BDSCWKNAEASC1A3","74413","Windows 10 must be configured to prioritize ECC Curves with longer key lengths first.","NistP384 NistP256","","Fail","5-22-2020 2:01:24 PM"
+"BDSCWKNAEASC1A3","74413","Windows 10 must be configured to prioritize ECC Curves with longer key lengths first.","NistP384 NistP256","NistP384, NistP256","Pass","5-22-2020 2:02:24 PM"

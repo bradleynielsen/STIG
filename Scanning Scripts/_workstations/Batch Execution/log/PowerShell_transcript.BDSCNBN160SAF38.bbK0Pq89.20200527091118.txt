@@ -1,0 +1,19 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200527091118
+Username: SWA\Bradley.T.Nielsen
+RunAs User: SWA\Bradley.T.Nielsen
+Configuration Name: 
+Machine: BDSCNBN160SAF38 (Microsoft Windows NT 10.0.17763.0)
+Host Application: PowerShell.exe -noexit -command Set-Location -literalPath '\\bdsca7swan200\BDSC_share\Information Assurance\STIG\Scripts\Scanning Scripts\_workstations\Batch Execution'
+Process ID: 18400
+PSVersion: 5.1.17763.1007
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.1007
+BuildVersion: 10.0.17763.1007
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is \\bdsca7swan200\BDSC_share\Information Assurance\STIG\Scripts\Scanning Scripts\_workstations\Batch Execution\log\PowerShell_transcript.BDSCNBN160SAF38.bbK0Pq89.20200527091118.txt

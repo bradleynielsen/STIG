@@ -1,0 +1,182 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200527091203
+Username: SWA\bradley.nielsen.ia
+RunAs User: SWA\bradley.nielsen.ia
+Configuration Name: 
+Machine: BDSCNBN160SAF38 (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\WINDOWS\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 9984
+PSVersion: 5.1.17763.1007
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.1007
+BuildVersion: 10.0.17763.1007
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is \\bdsca7swan200\BDSC_share\Information Assurance\STIG\Scripts\Scanning Scripts\_workstations\Batch Execution\log\PowerShell_transcript.BDSCNBN160SAF38.7lCntnuz.20200527091203.txt
+Checking network connection: BDSCNBNDET5E676
+ [Offline]
+Checking network connection: BDSCNBNDET5F07D
+ [Offline]
+Checking network connection: BDSCNBN160S1E1D
+ [Offline]
+Checking network connection: BDSCNBN160SAE00
+ [Offline]
+Checking network connection: BDSCNBNCACI5CB3
+ [Offline]
+Checking network connection: BDSCNBNCJTF8D6D
+ [Offline]
+Checking network connection: BDSCNBNCJTF8AF8
+ [Offline]
+Checking network connection: BDSCNBNCMDTD151
+ [Offline]
+Checking network connection: BDSCNBN1FLEDD12
+ [Offline]
+Checking network connection: BDSCNBNCJTFFC85
+ [Offline]
+Checking network connection: BDSCWKNAEAS7064
+ [Offline]
+Checking network connection: BDSCNBNTFMD8D9A
+ [Offline]
+Checking network connection: BDSCNBNTFMD583C
+ [Offline]
+Checking network connection: BDSCNBNTFMD4C06
+ [Offline]
+Checking network connection: BDSCNBNTFMD0CCD
+ [Offline]
+Checking network connection: BDSCNBNTFMDA1B0
+ [Offline]
+Checking network connection: BDSCNBNTFMD0A25
+ [Offline]
+Checking network connection: BDSCNBNTFMD4C4D
+ [Offline]
+Checking network connection: BDSCNBNTFMD7933
+ [Offline]
+Starting job on BDSCNBNDET5F07D
+Starting job on BDSCWKNAEASC1A3
+Starting job on BDSCNBN160S1E1D
+Starting job on BDSCNBN160SA575
+Starting job on BDSCWKN160S45E1
+Starting job on BDSCNBN160S131C
+Starting job on BDSCNBN160S6F03
+Starting job on BDSCNBN160S9DDF
+Starting job on BDSCNBN160SB21A
+Starting job on BDSCWKN160SCFFB
+Starting job on BDSCNBN160SA31B
+Starting job on BDSCNBN160SAACF
+Starting job on BDSCNBN160SA41F
+Starting job on BDSCNBN160SAF38
+Starting job on BDSCNBN160SFFD5
+Starting job on BDSCNBN160SB05A
+Starting job on BDSCNBN160SA5CA
+Starting job on BDSCWKN160S6C51
+Starting job on BDSCNBN160SADE1
+Starting job on BDSCNBN160SAF2D
+Starting job on BDSCWKN160SC144
+Starting job on BDSCWKN160SA53D
+Starting job on BDSCNBN160SE309
+Starting job on BDSCNBN160SAE00
+Starting job on BDSCNBN160SA2D2
+Starting job on BDSCNBN160S4395
+Starting job on BDSCNBNEACSE55D
+Starting job on BDSCNBNEACSF01F
+Starting job on BDSCNBNEACSE39C
+Starting job on BDSCNBNEACSE36F
+Starting job on BDSCNBNEACSEFCC
+Starting job on BDSCNBNEACSE552
+Starting job on BDSCNBNCJTF8D6D
+Starting job on BDSCNBNCJ6305BC
+Starting job on BDSCNBNCJTF8B5C
+Starting job on BDSCNBNCJTF8AF8
+Starting job on BDSCNBNCMDT2CC5
+Starting job on BDSCNBNCMDT8CB4
+Starting job on BDSCNBNCMDTA567
+Starting job on BDSCNBNCMDT8CFC
+Starting job on BDSCNBNCMDTA3AB
+Starting job on BDSCWKNHRC028F4
+Starting job on BDSCNBNCMDTD151
+Starting job on BDSCNBN1FLEDD12
+Starting job on BDSCNBN1FLE8AC2
+Starting job on BDSCNBN1FLE469F
+Starting job on BDSCNBN1FLE109F
+Starting job on BDSCNBN1FLE40E4
+Starting job on BDSCNBN1FLEB5E5
+Starting job on BDSCNBN1FLEDF67
+Starting job on BDSCWKN1FLE7962
+Starting job on BDSCNBN1FLE93C1
+Starting job on BDSCNBN1FLE082C
+Starting job on BDSCNBN1FLEBE35
+Starting job on BDSCNBN1FLE082D
+Starting job on BDSCNBN1FLE105F
+Starting job on BDSCNBN1FLE7581
+Starting job on BDSCNBN1FLE6D41
+Starting job on BDSCNBN1FLE3631
+Starting job on BDSCNBN1FLE6D1D
+Starting job on BDSCNBN1FLEBEF8
+Starting job on BDSCNBN1FLE6D24
+Starting job on BDSCNBN1FLE6674
+Starting job on BDSCNBN1FLEE740
+Starting job on BDSCNBN1FLEC6A4
+Starting job on BDSCNBN1FLE190D
+Starting job on BDSCNBN1FLEC472
+Starting job on BDSCNBN1FLE5602
+Starting job on BDSCWKN1MCT89BD
+Starting job on BDSCNBNMCTF96EF
+Starting job on BDSCWKN1MCTBCF6
+Starting job on TAJIWKNB56114B2
+Starting job on BDSCNBNMCTF2547
+Starting job on BDSCWKN1MCTE1F2
+Starting job on BDSCNBN1FLE9BDF
+Starting job on BDSCWKNCUST2BFE
+Starting job on BDSCWKN1FLE7C22
+Starting job on BDSCNBNCJTFFC85
+Starting job on BDSCWKNAEAGBE94
+Starting job on BDSCWKNAEAS7064
+Starting job on BDSCWKNAEAGBED9
+Starting job on BDSCNBNPAE4992A
+Starting job on BDSCNBNARC1A590
+Starting job on BDSCNBNARC18AF9
+Starting job on BDSCNBNTFMDA41F
+Starting job on BDSCNBNTFMD5DE0
+Starting job on BDSCNBNTFMD8D9A
+Starting job on BDSCNBNTFMD827B
+Starting job on BDSCNBNTFMD7946
+Starting job on BDSCNBNTFMDD8CC
+Starting job on BDSCNBNTFMD4C4C
+Starting job on BDSCNBNTFMDC967
+Starting job on BDSCNBNTFMD8B83
+Starting job on BDSCNBNTFMD8B3A
+Starting job on BDSCNBNTFMD718D
+Starting job on BDSCNBNMFMD66F3
+Starting job on BDSCNBNTFMD4C06
+Starting job on BDSCNBNTFMD8A0D
+Starting job on BDSCNBNTFMD78A6
+Starting job on BDSCNBNTFMDBB99
+Starting job on BDSCNBNTFMD7801
+Starting job on BDSCNBNTFMD76CE
+Starting job on BDSCNBNTFMDD6C3
+Starting job on BDSCNBNTFMD7886
+Starting job on BDSCNBNTFMD77DA
+Starting job on BDSCNBNTFMD0CCD
+Starting job on BDSCNBNTFMD27BB
+Starting job on BDSCNBNTFMDA1B0
+Starting job on BDSCNBNTFMD6960
+Starting job on BDSCNBNTFMD4761
+Starting job on BDSCNBNTFMD7BDB
+Starting job on BDSCNBNTFMD51B3
+Starting job on BDSCNBSTFMD83F2
+Starting job on BDSCNBNTFMD8BBA
+Starting job on BDSCNBNTFMD0A25
+Starting job on BDSCNBNTFMD7747
+Starting job on BDSCNBNTFMD9951
+Starting job on BDSCNBNTFMD7933
+Starting job on BDSCNBNTFMDA4AD
+Starting job on BDSCNBNTFMD9697
+Starting job on BDSCNBNMLOS8A3E
+Starting job on BDSCNBNTFHU40C3
+Starting job on BDSCNBN1LNO8B53
+Starting job on BDSCWKNAEAGCC56
+Waiting for jobs to complete...

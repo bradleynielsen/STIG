@@ -1,0 +1,2 @@
+"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
+"BDSCNBNCMDTA3AB","77195","Get-ProcessMitigation -Name","DEP.OverrideDEP.False","DEP.OverrideDEP: False [Pass]","Pass","3-16-2020 11:08:47 PM"

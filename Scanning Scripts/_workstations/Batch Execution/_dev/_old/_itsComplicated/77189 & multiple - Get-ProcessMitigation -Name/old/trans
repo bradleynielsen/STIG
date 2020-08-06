@@ -1,0 +1,101 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20191127173140
+Username: SWA\bradley.nielsen.sa
+RunAs User: SWA\bradley.nielsen.sa
+Configuration Name: 
+Machine: BDSCNBN160SAF38 (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell_ise.exe
+Process ID: 14816
+PSVersion: 5.1.17763.771
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.771
+BuildVersion: 10.0.17763.771
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Getting results for BDSCNBNAEAGEFF1
+[BDSCNBNAEAGEFF1] Connecting to remote server BDSCNBNAEAGEFF1 failed with the following error message : WinRM cannot 
+process the request. The following error with errorcode 0x80090322 occurred while using Kerberos authentication: An 
+unknown security error occurred.  
+ Possible causes are:
+  -The user name or password specified are invalid.
+  -Kerberos is used when no authentication method and no user name are specified.
+  -Kerberos accepts domain user names, but not local user names.
+  -The Service Principal Name (SPN) for the remote computer name and port does not exist.
+  -The client and remote computers are in different domains and there is no trust between the two domains.
+ After checking for the above issues, try the following:
+  -Check the Event Viewer for events related to authentication.
+  -Change the authentication method; add the destination computer to the WinRM TrustedHosts configuration setting or 
+use HTTPS transport.
+ Note that computers in the TrustedHosts list might not be authenticated.
+   -For more information about WinRM configuration, run the following command: winrm help config. For more information, 
+see the about_Remote_Troubleshooting Help topic.
+    + CategoryInfo          : OpenError: (BDSCNBNAEAGEFF1:String) [], PSRemotingTransportException
+    + FullyQualifiedErrorId : -2144108387,PSSessionStateBroken
+[BDSCNBNAEAGEFF1] Connecting to remote server BDSCNBNAEAGEFF1 failed with the
+following error message : WinRM cannot process the request. The following
+error with errorcode 0x80090322 occurred while using Kerberos authentication:
+An unknown security error occurred.
+ Possible causes are:
+  -The user name or password specified are invalid.
+  -Kerberos is used when no authentication method and no user name are
+specified.
+  -Kerberos accepts domain user names, but not local user names.
+  -The Service Principal Name (SPN) for the remote computer name and port does
+not exist.
+  -The client and remote computers are in different domains and there is no
+trust between the two domains.
+ After checking for the above issues, try the following:
+  -Check the Event Viewer for events related to authentication.
+  -Change the authentication method; add the destination computer to the WinRM
+TrustedHosts configuration setting or use HTTPS transport.
+ Note that computers in the TrustedHosts list might not be authenticated.
+   -For more information about WinRM configuration, run the following command:
+winrm help config. For more information, see the about_Remote_Troubleshooting
+Help topic.
+    + CategoryInfo          : OpenError: (BDSCNBNAEAGEFF1:String) [], PSRemoti
+   ngTransportException
+    + FullyQualifiedErrorId : -2144108387,PSSessionStateBroken
+Getting results for BDSCNBNAEAGF062
+PS C:\WINDOWS\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\WINDOWS\system32> $csv
+
+Vul_ID  appName              GoValuesArray
+------  -------              -------------
+Vul_ID  Name                 GoValuesArray
+V-77189 Acrobat.exe          @(DEP-Enable;ASLR-BottomUp;ASLR-ForceRelocateIm...
+V-77191 AcroRd32.exe         @(DEP-Enable;ASLR-BottomUp;ASLR-ForceRelocateIm...
+V-77217 iexplore.exe         @(DEP-Enable;ASLR-BottomUp;ASLR-ForceRelocateIm...
+V-77195 chrome.exe           @(DEP-Enable)
+V-77201 EXCEL.EXE            @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77221 INFOPATH.EXE         @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77227 lync.exe             @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77231 MSACCESS.EXE         @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77233 MSPUB.EXE            @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77243 OUTLOOK.EXE          @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77247 POWERPNT.EXE         @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77249 PPTVIEW.EXE          @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77255 VISIO.EXE            @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77259 VPREVIEW.EXE         @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77263 WINWORD.EXE          @(DEP-Enable;ASLR-ForceRelocateImages;Payload-E...
+V-77205 firefox.exe          @(DEP-Enable;ASLR-BottomUp;ASLR-ForceRelocateIm...
+V-77209 FLTLDR.EXE           @(DEP-Enable;ImageLoad-BlockRemoteImageLoads;Pa...
+V-77213 GROOVE.EXE           @(DEP-Enable;ASLR-ForceRelocateImages;ImageLoad...
+V-77223 java.exe             @(DEP-Enable;Payload-EnableExportAddressFilter;...
+V-77223 javaw.exe            @(DEP-Enable;Payload-EnableExportAddressFilter;...
+V-77223 javaws.exe           @(DEP-Enable;Payload-EnableExportAddressFilter;...
+V-77239 OIS.EXE              @(DEP-Enable;Payload-EnableExportAddressFilter;...
+V-77245 plugin-container.exe @(DEP-Enable;Payload-EnableExportAddressFilter;...
+V-77269 wordpad.exe          @(DEP-Enable;Payload-EnableExportAddressFilter;...
+V-77235 OneDrive.exe         @(DEP-Enable;ASLR-ForceRelocateImages;ImageLoad...
+V-77267 wmplayer.exe         @(DEP-Enable;Payload-EnableRopStackPivot;Payloa...
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20191127173229
+**********************

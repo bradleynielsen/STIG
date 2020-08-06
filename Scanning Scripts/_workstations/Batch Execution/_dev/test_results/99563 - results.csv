@@ -1,0 +1,3 @@
+"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
+"BDSCNBN160SA41F","99563","Windows spotlight features may suggest apps and content from third-party software publishers in addition to Microsoft apps and content.","1","Invoke-Command Error: PSRemotingTransportException","Error","5-22-2020 2:39:53 PM"
+"BDSCNBN160S1E1D","99563","Windows spotlight features may suggest apps and content from third-party software publishers in addition to Microsoft apps and content.","1","","Fail","5-22-2020 2:40:32 PM"

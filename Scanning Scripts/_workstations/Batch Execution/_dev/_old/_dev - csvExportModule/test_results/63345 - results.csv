@@ -1,0 +1,2 @@
+"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
+"BDSCNBNCMDTA3AB","63345","Get-AppLockerPolicy EnforcementMode","Enabled, Enabled, Enabled, Enabled, Enabled","Enabled, Enabled, Enabled, Enabled, Enabled","Pass","3-16-2020 10:58:22 PM"
