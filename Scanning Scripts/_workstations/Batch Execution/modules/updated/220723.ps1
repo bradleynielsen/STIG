@@ -1,11 +1,11 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID     = "63393"
-    $TestName   = ".p12 .pfx files"
-    $CheckValue = $null
-    $passFail   = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220723"
+    $TestName     = ".p12 .pfx files"
+    $CheckValue   = $null
+    $passFail     = ""
 
 #endregion: Config
 
@@ -42,10 +42,11 @@ Check Content
 
 If any files with these extensions exist, this is a finding.
 
-This does not apply to server-based applications that have a requirement for .p12 certificate files (e.g., Oracle Wallet Manager) or Adobe PreFlight certificate files. 
+This does not apply to server-based applications that have a requirement for .p12 
+certificate files (e.g., Oracle Wallet Manager) or Adobe PreFlight certificate files. 
 Some applications create files with extensions of .p12 that are not certificate installation files. 
-Removal of non-certificate installation files from systems is not required. 
-These must be documented with the ISSO."
+Removal of non-certificate installation files from systems is not required. These must be documented with the ISSO."
+
 
 #>
 

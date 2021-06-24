@@ -2,11 +2,11 @@
 #$computer = 'BDSCWKNAEAGCBAB'
 
 #region:    Config
-
-    $Vul_ID     = "63599"
-    $TestName   = "Device Guard - hypervisor support"
-    $CheckValue = 1
-    $passFail   = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220812"
+    $TestName     = "Device Guard - hypervisor support"
+    $CheckValue   = 1
+    $passFail     = ""
 
 #endregion: Config
     
@@ -44,7 +44,6 @@ return $resultsObj
 
 <#
 Check Content
-
 "Confirm Credential Guard is running on domain-joined systems.
 
 For those devices that support Credential Guard, this feature must be enabled. Organizations need to take the appropriate action to acquire and implement compatible hardware with Credential Guard enabled.
@@ -74,6 +73,9 @@ Value Name: LsaCfgFlags
 Value Type: REG_DWORD
 Value: 0x00000001 (1) (Enabled with UEFI lock)
 
+"
+
+
 
 
 
@@ -83,17 +85,20 @@ This field helps to enumerate and report state on the relevant security properti
 
 TABLE 1
 Value	Description
-0.	If present, no relevant properties exist on the device.
-1.	If present, hypervisor support is available.
-2.	If present, Secure Boot is available.
-3.	If present, DMA protection is available.
-4.	If present, Secure Memory Overwrite is available.
-5.	If present, NX protections are available.
-6.	If present, SMM mitigations are available.
-7.	If present, Mode Based Execution Control is available.
+0.	    If present, no relevant properties exist on the device.
+1.	    If present, hypervisor support is available.
+2.	    If present, Secure Boot is available.
+3.	    If present, DMA protection is available.
+4.	    If present, Secure Memory Overwrite is available.
+5.	    If present, NX protections are available.
+6.	    If present, SMM mitigations are available.
+7.	    If present, Mode Based Execution Control is available.
 
 
-"
+
+
+
+
 
 #>
 

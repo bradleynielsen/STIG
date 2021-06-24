@@ -1,10 +1,10 @@
 ﻿Param($computer)
 #region:    Config
-
-    $Vul_ID     = "63323"
-    $TestName   = "TPM enabled"
-    $CheckValue = "True"
-    $passFail   = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220698"
+    $TestName     = "TPM enabled"
+    $CheckValue   = "True"
+    $passFail     = ""
 
 #endregion: Config
 

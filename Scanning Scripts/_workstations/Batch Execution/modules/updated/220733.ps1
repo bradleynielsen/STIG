@@ -2,11 +2,11 @@
 
 
 #region:    Config
-
-    $Vul_ID     = "76505"
-    $TestName   = "Local Group Policy Editor User Rights"
-    $CheckValue = $null
-    $passFail   = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220733"
+    $TestName     = "Local Group Policy Editor User Rights"
+    $CheckValue   = $null
+    $passFail     = ""
 
 #endregion: Config
 
@@ -47,6 +47,7 @@ Navigate to Local Computer Policy >> Computer Configuration >> Windows Settings 
 Review each User Right listed for any unresolved SIDs to determine whether they are valid, such as due to being temporarily disconnected from the domain. (Unresolved SIDs have the format of ""*S-1-â€¦"".)
 
 If any unresolved SIDs exist and are not for currently valid accounts or groups, this is a finding."
+
 
 
 #>

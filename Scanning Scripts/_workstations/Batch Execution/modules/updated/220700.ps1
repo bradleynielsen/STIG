@@ -1,8 +1,8 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID       = '77085'
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = '220700'
     $TestName     = 'Confirm-SecureBootUEFI'
     $CheckValue   = "True"
     $passFail     = ""
@@ -55,8 +55,6 @@
 
 <#
 Check Content
-
-
 "Some older systems may not have UEFI firmware. This is currently a CAT III; it will be raised in severity at a future date when broad support of Windows 10 hardware and firmware requirements are expected to be met. Devices that have UEFI firmware must have Secure Boot enabled. 
 
 For virtual desktop implementations (VDIs) where the virtual desktop instance is deleted or refreshed upon logoff, this is NA.
@@ -64,10 +62,5 @@ For virtual desktop implementations (VDIs) where the virtual desktop instance is
 Run ""System Information"".
 
 Under ""System Summary"", if ""Secure Boot State"" does not display ""On"", this is finding."
-
-
-
-
-
 
 #>

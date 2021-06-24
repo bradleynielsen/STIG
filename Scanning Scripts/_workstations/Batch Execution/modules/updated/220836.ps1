@@ -1,8 +1,8 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID       = '63685'
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = '220836'
     $TestName     = 'EnableSmartScreen'
     $RegistryHive = 'HKEY_LOCAL_MACHINE'
     $RegistryPath = '\SOFTWARE\Policies\Microsoft\Windows\System\'
@@ -75,7 +75,6 @@
 
 <#
 Check Content
-
 "This is applicable to unclassified systems, for other systems this is NA.
 
 If the following registry values do not exist or are not configured as specified, this is a finding:
@@ -117,6 +116,7 @@ Value Name: EnableSmartScreen
 
 Value Type: REG_DWORD
 Value: 0x00000002 (2)"
+
 
 
 

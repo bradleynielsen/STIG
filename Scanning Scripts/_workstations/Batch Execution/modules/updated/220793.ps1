@@ -1,8 +1,8 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID       = '100093'
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = '220793'
     $TestName     = 'Collaborative computing devices'
     $RegistryHive = 'HKEY_LOCAL_MACHINE'
     $RegistryPath = '\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\'
@@ -74,9 +74,11 @@ This requirement is not applicable to mobile devices (smartphones and tablets), 
 
 This requirement is not applicable to dedicated VTC suites located in approved VTC locations that are centrally managed.
 
-For an external camera, if there is not a method for the operator to manually disconnect camera at the end of collaborative computing sessions, this is a finding.
+For an external camera, if there is not a method for the operator to manually disconnect camera at the end of collaborative computing 
+sessions, this is a finding.
 
-For a built-in camera, the camera must be protected by a camera cover (e.g. laptop camera cover slide) when not in use. If the built-in camera is not protected with a camera cover, or if the built-in
+For a built-in camera, the camera must be protected by a camera cover (e.g. laptop camera cover slide) when not in use. If the 
+built-in camera is not protected with a camera cover, or if the built-in
 camera is not disabled in the bios, this is a finding.
 
 If the camera is not disconnected or covered, the following registry entry is required:

@@ -1,11 +1,11 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID     = "63357"
-    $TestName   = "Win32_Share"
-    $CheckValue = 0
-    $passFail   = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220710"
+    $TestName     = "Win32_Share"
+    $CheckValue   = 0
+    $passFail     = ""
 
 #endregion: Config
 
@@ -34,7 +34,6 @@ return $resultsObj
 
 <#
 Check Content
-63357
 "Non system-created shares should not typically exist on workstations.
 
 If only system-created shares exist on the system this is NA.

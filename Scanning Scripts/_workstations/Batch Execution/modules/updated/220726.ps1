@@ -1,11 +1,11 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID     = "68845"
-    $TestName   = "DEP configuration"
-    $CheckValue = "nxAlwaysOn","nxOptOut"
-    $passFail   = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220726"
+    $TestName     = "DEP configuration"
+    $CheckValue   = "nxAlwaysOn","nxOptOut"
+    $passFail     = ""
 
 #endregion: Config
 
@@ -43,10 +43,11 @@ return $resultsObj
 
 <#
 Check Content
-""Verify the DEP configuration.
+"Verify the DEP configuration.
 Open a command prompt (cmd.exe) or PowerShell with elevated privileges (Run as administrator).
 Enter ""BCDEdit /enum {current}"". (If using PowerShell ""{current}"" must be enclosed in quotes.)
 If the value for ""nx"" is not ""OptOut"", this is a finding.
 (The more restrictive configuration of ""AlwaysOn"" would not be a finding.)"
+
 
 #>

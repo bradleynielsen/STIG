@@ -1,12 +1,12 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID     = "63595"
-    $TestName   = "Device Guard Required Security Properties"
-    $CheckValue = @(1,2,2)
-    $passFail   = ""
-    $stigCkCnt  = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220811"
+    $TestName     = "Device Guard Required Security Properties"
+    $CheckValue   = @(1,2,2)
+    $passFail     = ""
+    $stigCkCnt    = ""
 
 #endregion: Config
     
@@ -40,7 +40,6 @@ return $resultsObj
 
 <#
 Check Content
-
 "Confirm Virtualization Based Security is enabled and running with Secure Boot or Secure Boot and DMA Protection.
 
 For those devices that support virtualization based security (VBS) features, including Credential Guard or protection of code integrity, this must be enabled. If the system meets the hardware and firmware dependencies for enabling VBS but it is not enabled, this is a CAT III finding.
@@ -91,5 +90,9 @@ A Microsoft article on Credential Guard system requirement can be found at the f
 https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard-requirements
 
 NOTE:  The severity level for the requirement will be upgraded to CAT II starting January 2020."
+
+
+
+
 
 #>

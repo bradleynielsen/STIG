@@ -1,12 +1,12 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID         = "63363"
-    $TestName       = "Backup Operators"
-    $CheckValue     = 0
-    $passFail       = ""
-    $failures       = @()
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220713"
+    $TestName     = "Backup Operators"
+    $CheckValue   = 0
+    $passFail     = ""
+    $failures     = @()
 
 #endregion: Config
 
@@ -65,6 +65,7 @@ If the group contains no accounts, this is not a finding.
 If the group contains any accounts, the accounts must be specifically for backup functions.
 
 If the group contains any standard user accounts used for performing normal user tasks, this is a finding."
+
 
 Automated Check Development Notes
 "Run from an administrative PowerShell session replacing <Computer> with the remote hostname:

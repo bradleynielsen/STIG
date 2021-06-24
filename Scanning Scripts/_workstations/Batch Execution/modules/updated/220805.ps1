@@ -1,7 +1,8 @@
 ﻿Param($computer)
 
 #region:    Config
-    $Vul_ID       = '74413'
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'    
+    $Vul_ID       = '220805'
     $TestName     = 'Windows 10 must be configured to prioritize ECC Curves with longer key lengths first.'
     $RegistryHive = 'HKEY_LOCAL_MACHINE'
     $RegistryPath = '\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002\'
@@ -64,7 +65,6 @@ if($results -ne "Error"){
 
 <#
 Check Content
-
 "If the following registry value does not exist or is not configured as specified, this is a finding.
 
 Registry Hive: HKEY_LOCAL_MACHINE
@@ -74,7 +74,5 @@ Value Name: EccCurves
 
 Value Type: REG_MULTI_SZ
 Value: NistP384 NistP256"
-
-
 
 #>

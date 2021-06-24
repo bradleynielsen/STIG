@@ -1,11 +1,11 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID     = "63345"
-    $TestName   = "Get-AppLockerPolicy EnforcementMode"
-    $CheckValue = "Enabled","Enabled","Enabled","Enabled","Enabled"
-    $passFail   = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220705"
+    $TestName     = "Get-AppLockerPolicy EnforcementMode"
+    $CheckValue   = "Enabled","Enabled","Enabled","Enabled","Enabled"
+    $passFail     = ""
 
 #endregion: Config
 

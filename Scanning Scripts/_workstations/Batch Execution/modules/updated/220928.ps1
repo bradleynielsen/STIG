@@ -1,11 +1,11 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID     = "63739"
-    $TestName   = "Reg: RestrictAnonymousSAM"
-    $CheckValue = "1"
-    $passFail   = ""
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220928"
+    $TestName     = "Reg: RestrictAnonymousSAM"
+    $CheckValue   = "1"
+    $passFail     = ""
 
 #endregion: Config
        
@@ -43,7 +43,6 @@ return $resultsObj
 
 <#
 Check Content
-
 "Verify the effective setting in Local Group Policy Editor.
 Run ""gpedit.msc"".
 
@@ -52,11 +51,13 @@ Navigate to Local Computer Policy >> Computer Configuration >> Windows Settings 
 If the value for ""Network access: Allow anonymous SID/Name translation"" is not set to ""Disabled"", this is a finding."
 
 
+
 Run from an administrative PowerShell session replacing <Computer> with the remote hostname:
 
 Invoke-Command -ComputerName <Hostname> -ScriptBlock {(get-itemproperty "HKLM:\System\CurrentControlSet\Control\LSA").RestrictAnonymousSAM}
 
 If the returned value is not 1, this is a finding.
+
 
 
 #>

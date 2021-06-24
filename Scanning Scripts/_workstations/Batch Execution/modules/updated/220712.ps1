@@ -1,29 +1,22 @@
 ﻿Param($computer)
-#region:    Config
 
-    $Vul_ID     = "63361"
-    $TestName   = "Get-AppLockerPolicy EnforcementMode"
-    $passFail   = ""
-    $CheckValue = "Alias name     administrators
+#region:    Config
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220712"
+    $TestName     = "Get-AppLockerPolicy EnforcementMode"
+    $passFail     = ""
+    $CheckValue   = "Alias name     administrators 
 Comment        
 
 Members
 
 -------------------------------------------------------------------------------
-DoD_Admin
-SWA\IRQ-GS-BDSC-Help_Desk
-SWA\IRQ-GS-BDSC-IA
-SWA\IRQ-GS-BDSC-IMO
-SWA\IRQ-GS-BDSC-NA
-SWA\IRQ-GS-BDSC-Site_Admin
-SWA\SWA Domain Service Accounts
-SWA\SWA Domain Workstation Admins
-SWA_AD
-SWA_Admin
-The command completed successfully.
+account 1
+account 2
+etc...
 
 "
-
+# ^ set this to expected output
 
 
 #endregion: Config
@@ -57,7 +50,6 @@ return $resultsObj
 
 <#
 Check Content
-
 "Run ""Computer Management"".
 Navigate to System Tools >> Local Users and Groups >> Groups.
 Review the members of the Administrators group.
@@ -83,34 +75,6 @@ The built-in Administrator account or other required administrative accounts wou
 
 
 
-
-
-
-
-
-
-
-"Alias name     administrators
-Comment        
-
-Members
-
--------------------------------------------------------------------------------
-DoD_Admin
-SWA\IRQ-GS-BDSC-Help_Desk
-SWA\IRQ-GS-BDSC-IA
-SWA\IRQ-GS-BDSC-IMO
-SWA\IRQ-GS-BDSC-NA
-SWA\IRQ-GS-BDSC-Site_Admin
-SWA\SWA Domain Service Accounts
-SWA\SWA Domain Workstation Admins
-SWA_AD
-SWA_Admin
-The command completed successfully.
-
-
-
-"
 
 
 

@@ -1,7 +1,8 @@
 ﻿Param($computer)
 
 #region:    Config
-    $Vul_ID       = "63545"
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220792"
     $TestName     = "Camera access from the lock screen must be disabled." 
     $RegistryHive = 'HKEY_LOCAL_MACHINE'                                    
     $RegistryPath = '\SOFTWARE\Policies\Microsoft\Windows\Personalization\'
@@ -59,8 +60,6 @@
 
 <#
 Check Content
-
-
 "If the device does not have a camera, this is NA.
 
 If the following registry value does not exist or is not configured as specified, this is a finding.
@@ -72,6 +71,7 @@ Value Name: NoLockScreenCamera
 
 Value Type: REG_DWORD
 Value: 1"
+
 
 
     (get-ItemProperty -path $using:searchPath).$ValueName

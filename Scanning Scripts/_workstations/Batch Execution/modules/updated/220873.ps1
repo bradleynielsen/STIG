@@ -1,0 +1,79 @@
+﻿Param($computer)
+
+#region:    Config
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220873"
+    $TestName     = "Get-ProcessMitigation -System Dep.Enable"
+    $CheckValue   = "NOTSET","ON"
+    $passFail     = ""
+
+#endregion: Config
+
+#region:    Scan
+
+    try{
+        $results = Invoke-Command -ComputerName $computer -ScriptBlock {
+                    (Get-ProcessMitigation -System -WarningAction SilentlyContinue).Dep.Enable
+        } -ErrorAction stop
+        $results = $results.Value
+    }catch{
+        $results  = "Error"
+        $passFail = "Error"
+    }
+
+#endregion: Scan
+
+#region:    Test
+
+if($results -ne "Error"){
+    if($results -eq $CheckValue[0] -or $results -eq $CheckValue[1] ){
+        $passFail = "Pass"
+    }else{
+        $passFail = "Fail"
+    }
+}
+
+#endregion: Test
+
+#region:    Return Results
+
+    $resultsObj = [PSCustomObject]@{
+        "Computer"   = $computer
+        "Vul_ID"     = $Vul_ID
+        "Test Name"  = $TestName
+        "CheckValue" = $CheckValue
+        "Value"      = $results -join ', '
+        "Pass/Fail"  = $passFail
+    }
+
+    $exportCSV = gci $PSScriptRoot\shared\exportCSV.ps1
+    & $exportCSV -resultsObj $resultsObj
+
+    return $resultsObj
+
+
+#endregion: Return Results
+
+
+
+
+
+<#
+Check Content
+"This is NA prior to v1709 of Windows 10.
+
+This is applicable to unclassified systems, for other systems this is NA.
+
+The default configuration in Exploit Protection is ""On by default"" which meets this requirement.  The PowerShell query results for this show as ""NOTSET"".
+
+Run ""Windows PowerShell"" with elevated privileges (run as administrator).
+
+Enter ""Get-ProcessMitigation -System"".
+
+If the status of ""DEP: Enable"" is ""OFF"", this is a finding.
+
+Values that would not be a finding include:
+ON
+NOTSET (Default configuration)"
+
+#>
