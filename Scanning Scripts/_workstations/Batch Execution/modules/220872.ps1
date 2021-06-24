@@ -1,14 +1,14 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID       = '94861'
-    $TestName     = 'Windows 10 systems must use a BitLocker PIN with a minimum length of 6 digits for pre-boot authentication.'
-    $RegistryHive = 'HKEY_LOCAL_MACHINE'
-    $RegistryPath = '\SOFTWARE\Policies\Microsoft\FVE\'
-    $ValueName    = 'MinimumPIN'
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = '220872'
+    $TestName     = 'Windows spotlight features may suggest apps and content from third-party software publishers in addition to Microsoft apps and content.'
+    $RegistryHive = 'HKEY_CURRENT_USER'
+    $RegistryPath = '\SOFTWARE\Policies\Microsoft\Windows\CloudContent\'
+    $ValueName    = 'DisableThirdPartySuggestions'
     $ValueType    = 'REG_DWORD'
-    $CheckValue   = 6
+    $CheckValue   = 1
     $searchPrefix = 'Microsoft.PowerShell.Core\Registry::'
     $searchPath   = $searchPrefix+$RegistryHive+$RegistryPath
     $passFail     = ""
@@ -36,8 +36,6 @@
     if ($results -like "*error*") {
         $passFail = "Error"
     }elseif ($results -eq $CheckValue) {
-        $passFail = "Pass"
-    }elseif ($results -gt 6) {
         $passFail = "Pass"
     } else {
         $passFail = "Fail"
@@ -67,22 +65,19 @@
 
 <#
 Check Content
-
-
 "If the following registry value does not exist or is not configured as specified, this is a finding.
 
-Registry Hive: HKEY_LOCAL_MACHINE
-Registry Path: \SOFTWARE\Policies\Microsoft\FVE\
+If the following registry value does not exist or is not configured as specified, this is a finding: 
 
-Value Name: MinimumPIN
+Registry Hive: HKEY_CURRENT_USER
+Registry Path: \SOFTWARE\Policies\Microsoft\Windows\CloudContent\
+
+Value Name: DisableThirdPartySuggestions
+
 Type: REG_DWORD
-Value: 0x00000006 (6) or greater"
+Value: 0x00000001 (1)
 
-
-
-
-
-
+"
 
 
 #>

@@ -1,14 +1,14 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID        = "77223_a"
-    $TestName      = "Get-ProcessMitigation -Name"
-    $appName       = 'java.exe'
-    $CheckValue    = @("DEP.OverrideDEP.False;Payload.OverrideEnableExportAddressFilter.False;Payload.OverrideEnableExportAddressFilterPlus.False;Payload.OverrideEnableImportAddressFilter.False;Payload.OverrideEnableRopStackPivot.False;Payload.OverrideEnableRopCallerCheck.False;Payload.OverrideEnableRopSimExec.False".Split(";"))
-    $passFail      = ""
-    $testArray     = @()
-    $resultsArray  = @()
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220887_a"
+    $TestName     = "Get-ProcessMitigation -Name"
+    $appName      = 'java.exe'
+    $CheckValue   = @("DEP.OverrideDEP.False;Payload.OverrideEnableExportAddressFilter.False;Payload.OverrideEnableExportAddressFilterPlus.False;Payload.OverrideEnableImportAddressFilter.False;Payload.OverrideEnableRopStackPivot.False;Payload.OverrideEnableRopCallerCheck.False;Payload.OverrideEnableRopSimExec.False".Split(";"))
+    $passFail     = ""
+    $testArray    = @()
+    $resultsArray = @()
 
 #endregion: Config
 
@@ -68,10 +68,7 @@
 #endregion:    Return Results
 <#
 
-
-Check Text:
-
-
+Check Content
 "This is NA prior to v1709 of Windows 10.
 
 This is applicable to unclassified systems, for other systems this is NA.
@@ -85,12 +82,12 @@ java.exe, javaw.exe, and javaws.exe
 If the following mitigations do not have the listed status which is shown below, this is a finding:
 
 DEP:
-OverrideDEP: False
+Override DEP: False
 
 Payload:
-OverrideEnableExportAddressFilter: False
-OverrideEnableExportAddressFilterPlus: False
-OverrideEnableImportAddressFilter: False
+OverrideExportAddressFilter: False
+OverrideExportAddressFilterPlus: False
+OverrideImportAddressFilter: False
 OverrideEnableRopStackPivot: False
 OverrideEnableRopCallerCheck: False
 OverrideEnableRopSimExec: False

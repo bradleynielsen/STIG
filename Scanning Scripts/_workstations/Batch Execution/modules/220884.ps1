@@ -1,14 +1,14 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID        = "77205"
-    $TestName      = "Get-ProcessMitigation -Name"
-    $appName       = 'firefox.exe'
-    $CheckValue    = @("DEP.overridedep.False;ASLR.ForceRelocateImages.ON".Split(";"))   
-    $passFail      = ""
-    $testArray     = @()
-    $resultsArray  = @()
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220884"
+    $TestName     = "Get-ProcessMitigation -Name"
+    $appName      = 'GROOVE.EXE'
+    $CheckValue   = @("DEP.OverrideDEP.False;ASLR.ForceRelocateImages.ON;ImageLoad.OverrideBlockRemoteImageLoads.False;Payload.OverrideEnableExportAddressFilter.False;Payload.OverrideEnableExportAddressFilterPlus.False;Payload.OverrideEnableImportAddressFilter.False;Payload.OverrideEnableRopStackPivot.False;Payload.OverrideEnableRopCallerCheck.False;Payload.OverrideEnableRopSimExec.False;ChildProcess.OverrideChildProcess.False".Split(";"))    
+    $passFail     = ""
+    $testArray    = @()
+    $resultsArray = @()
 
 #endregion: Config
 
@@ -25,18 +25,20 @@
                         $class    = $args[1]
                         $property = $args[2]
                         $value    = $args[3]
-                        (Get-ProcessMitigation -Name $appName -WarningAction SilentlyContinue).$class.$property
+                        (Get-ProcessMitigation -Name $appName -WarningAction SilentlyContinue -ErrorAction SilentlyContinue).$class.$property
                     } -ArgumentList $appName, $class, $property, $value -ErrorAction SilentlyContinue
     
         if ($results -eq $null){
             $test = "NULL"
+            $resultsArray += "$class.$property"+": "+$results+" ["+$test+"]"
         }elseif($results.ToString() -eq $value){
             $test = "Pass"
+            $resultsArray += "$class.$property"+": "+$results.ToString()+" ["+$test+"]"
         }else{
             $test = "Fail"
+            $resultsArray += "$class.$property"+": "+$results.ToString()+" ["+$test+"]"
         }
 
-        $resultsArray += "$class.$property"+": "+$results+" ["+$test+"]"
     }
 
     $resultsArray
@@ -68,27 +70,38 @@
 #endregion:    Return Results
 <#
 Check Content
-
 "This is NA prior to v1709 of Windows 10.
 
 This is applicable to unclassified systems, for other systems this is NA.
 
 Run ""Windows PowerShell"" with elevated privileges (run as administrator).
 
-Enter ""Get-ProcessMitigation -Name firefox.exe"".
+Enter ""Get-ProcessMitigation -Name GROOVE.EXE"".
 (Get-ProcessMitigation can be run without the -Name parameter to get a list of all application mitigations configured.)
+
 If the following mitigations do not have the listed status which is shown below, this is a finding:
 
 DEP:
-Override DEP: False
+OverrideDEP: False
 
 ASLR:
-ForceRelocateImages: True
+ForceRelocateImages: On
 
-The PowerShell command produces a list of mitigations; only those with a required status are listed here. If the PowerShell command does not produce results, ensure the letter case of the filename within the command syntax matches the letter case of the actual filename on the system."
+ImageLoad:
+OverrideBlockRemoteImages: False
+
+Payload:
+OverrideExportAddressFilter: False
+OverrideExportAddressFilterPlus: False
+OverrideImportAddressFilter: False
+OverrideEnableRopStackPivot: False
+OverrideEnableRopCallerCheck: False
+OverrideEnableRopSimExec: False
 
 
+Child Process:
+OverrideChildProcess: False
 
-
+The PowerShell command produces a list of mitigations; only those with a required status are listed here.  If the PowerShell command does not produce results, ensure the letter case of the filename within the command syntax matches the letter case of the actual filename on the system."
 
 #>

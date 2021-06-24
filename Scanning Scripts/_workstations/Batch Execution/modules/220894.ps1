@@ -1,14 +1,14 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID        = "77245"
-    $TestName      = "Get-ProcessMitigation -Name"
-    $appName       = 'plugin-container.exe'
-    $CheckValue    = @("DEP.Enable.ON;Payload.EnableExportAddressFilter.ON;Payload.EnableExportAddressFilterPlus.ON;Payload.EnableImportAddressFilter.ON;Payload.EnableRopStackPivot.ON;Payload.EnableRopCallerCheck.ON;Payload.EnableRopSimExec.ON".Split(";"))
-    $passFail      = ""
-    $testArray     = @()
-    $resultsArray  = @()
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220894"
+    $TestName     = "Get-ProcessMitigation -Name"
+    $appName      = 'plugin-container.exe'
+    $CheckValue   = @("DEP.Enable.ON;Payload.EnableExportAddressFilter.ON;Payload.EnableExportAddressFilterPlus.ON;Payload.EnableImportAddressFilter.ON;Payload.EnableRopStackPivot.ON;Payload.EnableRopCallerCheck.ON;Payload.EnableRopSimExec.ON".Split(";"))
+    $passFail     = ""
+    $testArray    = @()
+    $resultsArray = @()
 
 #endregion: Config
 
@@ -76,8 +76,6 @@
 #endregion:    Return Results
 <#
 Check Content
-
-
 "This is NA prior to v1709 of Windows 10.
 
 This is applicable to unclassified systems, for other systems this is NA.
@@ -87,22 +85,20 @@ Run ""Windows PowerShell"" with elevated privileges (run as administrator).
 Enter ""Get-ProcessMitigation -Name plugin-container.exe"".
 (Get-ProcessMitigation can be run without the -Name parameter to get a list of all application mitigations configured.)
 
-If the following mitigations do not have a status of ""ON"", this is a finding:
+If the following mitigations do not have the listed status shown below, this is a finding:
 
 DEP:
-Enable: ON
+Override DEP: False
 
 Payload:
-EnableExportAddressFilter: ON
-EnableExportAddressFilterPlus: ON
-EnableImportAddressFilter: ON
-EnableRopStackPivot: ON
-EnableRopCallerCheck: ON
-EnableRopSimExec: ON
+OverrideExportAddressFilter: False
+OverrideExportAddressFilterPlus: False
+OverrideImportAddressFilter: False
+OverrideEnableRopStackPivot: False
+OverrideEnableRopCallerCheck: False
+OverrideEnableRopSimExec: False
 
 The PowerShell command produces a list of mitigations; only those with a required status of ""ON"" are listed here. If the PowerShell command does not produce results, ensure the letter case of the filename within the command syntax matches the letter case of the actual filename on the system."
-
-
 
 
 #>

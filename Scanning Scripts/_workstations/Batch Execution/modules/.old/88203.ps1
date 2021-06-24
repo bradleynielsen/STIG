@@ -1,7 +1,7 @@
 ﻿Param($computer)
 
 #region:    Config
-
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
     $Vul_ID       = '88203'
     $TestName     = 'OneDrive must only allow synchronizing of accounts for DoD organization instances.'
     $RegistryHive = 'HKEY_LOCAL_MACHINE'

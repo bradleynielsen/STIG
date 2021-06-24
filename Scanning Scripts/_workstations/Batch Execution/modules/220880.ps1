@@ -1,14 +1,14 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID        = "77195"
-    $TestName      = "Get-ProcessMitigation -Name"
-    $appName       = 'chrome.exe'
-    $CheckValue    = @("DEP.OverrideDEP.False".Split(";"))    
-    $passFail      = ""
-    $testArray     = @()
-    $resultsArray  = @()
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220880"
+    $TestName     = "Get-ProcessMitigation -Name"
+    $appName      = 'chrome.exe'
+    $CheckValue   = @("DEP.OverrideDEP.False".Split(";"))    
+    $passFail     = ""
+    $testArray    = @()
+    $resultsArray = @()
 
 #endregion: Config
 
@@ -68,15 +68,6 @@
 #endregion:    Return Results
 <#
 Check Content
-
-
-
-
-
-
-
-
-
 "This is NA prior to v1709 of Windows 10.
 
 This is applicable to unclassified systems, for other systems this is NA.

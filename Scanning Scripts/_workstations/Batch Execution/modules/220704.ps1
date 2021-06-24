@@ -1,16 +1,14 @@
 ﻿Param($computer)
 
-
-
 #region:    Config
-
-    $Vul_ID       = '99563'
-    $TestName     = 'Windows spotlight features may suggest apps and content from third-party software publishers in addition to Microsoft apps and content.'
-    $RegistryHive = 'HKEY_CURRENT_USER'
-    $RegistryPath = '\SOFTWARE\Policies\Microsoft\Windows\CloudContent\'
-    $ValueName    = 'DisableThirdPartySuggestions'
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = '220704'
+    $TestName     = 'Windows 10 systems must use a BitLocker PIN with a minimum length of 6 digits for pre-boot authentication.'
+    $RegistryHive = 'HKEY_LOCAL_MACHINE'
+    $RegistryPath = '\SOFTWARE\Policies\Microsoft\FVE\'
+    $ValueName    = 'MinimumPIN'
     $ValueType    = 'REG_DWORD'
-    $CheckValue   = 1
+    $CheckValue   = 6
     $searchPrefix = 'Microsoft.PowerShell.Core\Registry::'
     $searchPath   = $searchPrefix+$RegistryHive+$RegistryPath
     $passFail     = ""
@@ -38,6 +36,8 @@
     if ($results -like "*error*") {
         $passFail = "Error"
     }elseif ($results -eq $CheckValue) {
+        $passFail = "Pass"
+    }elseif ($results -gt 6) {
         $passFail = "Pass"
     } else {
         $passFail = "Fail"
@@ -67,27 +67,18 @@
 
 <#
 Check Content
-
-
 "If the following registry value does not exist or is not configured as specified, this is a finding.
 
-If the following registry value does not exist or is not configured as specified, this is a finding: 
+For virtual desktop implementations (VDIs) in which the virtual desktop instance is deleted or refreshed upon logoff, this is NA.
 
-Registry Hive: HKEY_CURRENT_USER
-Registry Path: \SOFTWARE\Policies\Microsoft\Windows\CloudContent\
+For WVD implementations with no data at rest, this is NA.
 
-Value Name: DisableThirdPartySuggestions
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \SOFTWARE\Policies\Microsoft\FVE\
 
+Value Name: MinimumPIN
 Type: REG_DWORD
-Value: 0x00000001 (1)
-
-"
-
-
-
-
-
-
+Value: 0x00000006 (6) or greater"
 
 
 

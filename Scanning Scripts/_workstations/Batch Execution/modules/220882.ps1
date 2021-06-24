@@ -1,11 +1,11 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID        = "77227"
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID        = "220882"
     $TestName      = "Get-ProcessMitigation -Name"
-    $appName       = 'lync.exe'
-    $CheckValue    = @("DEP.OverrideDEP.False;ASLR.ForceRelocateImages.ON;Payload.OverrideEnableExportAddressFilter.False;Payload.OverrideEnableExportAddressFilterPlus.False;Payload.OverrideEnableImportAddressFilter.False;Payload.OverrideEnableRopStackPivot.False;Payload.OverrideEnableRopCallerCheck.False;Payload.OverrideEnableRopSimExec.False".Split(";"))
+    $appName       = 'firefox.exe'
+    $CheckValue    = @("DEP.overridedep.False;ASLR.ForceRelocateImages.ON".Split(";"))   
     $passFail      = ""
     $testArray     = @()
     $resultsArray  = @()
@@ -28,7 +28,6 @@
                         (Get-ProcessMitigation -Name $appName -WarningAction SilentlyContinue).$class.$property
                     } -ArgumentList $appName, $class, $property, $value -ErrorAction SilentlyContinue
     
-
         if ($results -eq $null){
             $test = "NULL"
         }elseif($results.ToString() -eq $value){
@@ -37,13 +36,10 @@
             $test = "Fail"
         }
 
-
         $resultsArray += "$class.$property"+": "+$results+" ["+$test+"]"
     }
 
-#endregion: Scan
-
-#region:    Test
+    $resultsArray
 
     if(($resultsArray -match "Fail").Count -gt 0){
         $passFail = "Fail"
@@ -51,7 +47,7 @@
         $passFail = "Pass"
     }
 
-#endregion: Test
+#endregion: Scan
                         
 #region:  Results
 
@@ -70,51 +66,27 @@
     return $resultsObj
 
 #endregion:    Return Results
-
 <#
-
-
-
-DEP.OverrideDEP.False
-ASLR.ForceRelocateImages.ON
-Payload.OverrideEnableExportAddressFilter.False
-Payload.OverrideEnableExportAddressFilterPlus.False
-Payload.OverrideEnableImportAddressFilter.False
-Payload.OverrideEnableRopStackPivot.False
-Payload.OverrideEnableRopCallerCheck.False
-Payload.OverrideEnableRopSimExec.False
-
-Check Text:
-
-
+Check Content
 "This is NA prior to v1709 of Windows 10.
 
 This is applicable to unclassified systems, for other systems this is NA.
 
 Run ""Windows PowerShell"" with elevated privileges (run as administrator).
 
-Enter ""Get-ProcessMitigation -Name lync.exe"".
+Enter ""Get-ProcessMitigation -Name firefox.exe"".
 (Get-ProcessMitigation can be run without the -Name parameter to get a list of all application mitigations configured.)
-
 If the following mitigations do not have the listed status which is shown below, this is a finding:
 
 DEP:
-OverrideDEP: False
+Override DEP: False
 
 ASLR:
-ForceRelocateImages: ON
-
-Payload:
-OverrideEnableExportAddressFilter: False
-OverrideEnableExportAddressFilterPlus: False
-OverrideEnableImportAddressFilter: False
-OverrideEnableRopStackPivot: False
-OverrideEnableRopCallerCheck: False
-OverrideEnableRopSimExec: False
-
+ForceRelocateImages: On
 
 The PowerShell command produces a list of mitigations; only those with a required status are listed here. If the PowerShell command does not produce results, ensure the letter case of the filename within the command syntax matches the letter case of the actual filename on the system."
 
-   
+
+
 
 #>

@@ -1,14 +1,14 @@
 ﻿Param($computer)
 
 #region:    Config
-
-    $Vul_ID        = "77223_b"
-    $TestName      = "Get-ProcessMitigation -Name"
-    $appName       = 'javaw.exe'
-    $CheckValue    = @("DEP.OverrideDEP.False;Payload.OverrideEnableExportAddressFilter.False;Payload.OverrideEnableExportAddressFilterPlus.False;Payload.OverrideEnableImportAddressFilter.False;Payload.OverrideEnableRopStackPivot.False;Payload.OverrideEnableRopCallerCheck.False;Payload.OverrideEnableRopSimExec.False".Split(";"))
-    $passFail      = ""
-    $testArray     = @()
-    $resultsArray  = @()
+    $STIG_Version = 'Windows 10 Security Technical Implementation Guide :: Version 2, Release: 2 Benchmark Date: 04 May 2021'
+    $Vul_ID       = "220900"
+    $TestName     = "Get-ProcessMitigation -Name"
+    $appName      = 'wmplayer.exe'
+    $CheckValue   = @("DEP.OverrideDEP.False;Payload.OverrideEnableExportAddressFilter.False;Payload.OverrideEnableExportAddressFilterPlus.False;Payload.OverrideEnableImportAddressFilter.False;Payload.OverrideEnableRopStackPivot.False;Payload.OverrideEnableRopCallerCheck.False;Payload.OverrideEnableRopSimExec.False".Split(";"))
+    $passFail     = ""
+    $testArray    = @()
+    $resultsArray = @()
 
 #endregion: Config
 
@@ -69,33 +69,31 @@
 <#
 
 
-Check Text:
-
-
+Check Content
 "This is NA prior to v1709 of Windows 10.
 
 This is applicable to unclassified systems, for other systems this is NA.
 
 Run ""Windows PowerShell"" with elevated privileges (run as administrator).
 
-Enter ""Get-ProcessMitigation -Name [application name]"" with each of the following substituted for [application name]:
-java.exe, javaw.exe, and javaws.exe
+Enter ""Get-ProcessMitigation -Name wmplayer.exe"".
 (Get-ProcessMitigation can be run without the -Name parameter to get a list of all application mitigations configured.)
 
 If the following mitigations do not have the listed status which is shown below, this is a finding:
 
 DEP:
-OverrideDEP: False
+Override DEP: False
 
 Payload:
-OverrideEnableExportAddressFilter: False
-OverrideEnableExportAddressFilterPlus: False
-OverrideEnableImportAddressFilter: False
+OverrideExportAddressFilter: False
+OverrideExportAddressFilterPlus: False
+OverrideImportAddressFilter: False
 OverrideEnableRopStackPivot: False
 OverrideEnableRopCallerCheck: False
 OverrideEnableRopSimExec: False
 
-
 The PowerShell command produces a list of mitigations; only those with a required status are listed here. If the PowerShell command does not produce results, ensure the letter case of the filename within the command syntax matches the letter case of the actual filename on the system."
+
+
 
 #>
