@@ -1,2 +1,0 @@
-"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
-"BDSCNBNCMDTA3AB","63357","Win32_Share","0","\\BDSCNBNCMDTA3AB\root\cimv2:Win32_Share.Name=""print$""","Fail","3-16-2020 10:58:27 PM"

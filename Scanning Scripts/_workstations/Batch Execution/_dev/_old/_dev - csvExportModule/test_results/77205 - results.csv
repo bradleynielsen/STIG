@@ -1,2 +1,0 @@
-"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
-"BDSCNBNCMDTA3AB","77205","Get-ProcessMitigation -Name","DEP.overridedep.False,ASLR.ForceRelocateImages.ON","DEP.overridedep: False [Pass],ASLR.ForceRelocateImages: 1 [Pass]","Pass","3-16-2020 11:09:34 PM"

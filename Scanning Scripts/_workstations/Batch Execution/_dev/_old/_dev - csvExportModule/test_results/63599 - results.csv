@@ -1,2 +1,0 @@
-"Computer","Vul_ID","Test Name","CheckValue","Value","Pass/Fail","Timestamp"
-"BDSCNBNCMDTA3AB","63599","Device Guard Required Security Properties","1","@{SecurityServicesRunning=System.Collections.ArrayList; PSComputerName=BDSCNBNCMDTA3AB; RunspaceId=4513345c-8275-418c-89c9-ef8342d1e072; PSShowComputerName=True}","Pass","3-16-2020 11:06:57 PM"

@@ -1,0 +1,18 @@
+sapTestBattery,stigid,type
+Cisco IOS XE Router NDM Security Technical Implementation Guide,Cisco_IOS-XE_Router_RTR_STIG,ckl
+Microsoft Defender Antivirus Security Technical Implementation Guide,MS_Defender_Antivirus,ckl
+Microsoft DotNet Framework 4.0 Security Technical Implementation Guide,MS_Dot_Net_Framework,ckl
+Microsoft Edge Security Technical Implementation Guide,MS_Edge_STIG,ckl
+Microsoft Internet Explorer 11 Security Technical Implementation Guide,IE_11_STIG,ckl
+Microsoft Windows 10 Security Technical Implementation Guide,MS_Windows_10_STIG,ckl
+Microsoft Windows Firewall with Advanced Security Security Technical Implementation Guide,Windows_Firewall_with_Advanced_Security,ckl
+Microsoft Windows Server 2016 Security Technical Implementation Guide,Windows_Server_2016_STIG,ckl
+Cisco IOS-XE Router NDM STIG Benchmark,Cisco_IOS-XE_Router_RTR_STIG,xccdf
+Microsoft Defender Antivirus STIG SCAP Benchmark,MS_Defender_Antivirus,xccdf
+Microsoft Defender Antivirus STIG SCAP Benchmark,Windows_Defender_Antivirus,xccdf
+Microsoft DotNet Framework 4.0 STIG SCAP Benchmark,MS_Dot_Net_Framework,xccdf
+Microsoft Edge STIG SCAP Benchmark,MS_Edge_STIG,xccdf
+Microsoft Internet Explorer 11 STIG SCAP Benchmark,IE_11_STIG,xccdf
+Microsoft Windows 10 STIG SCAP Benchmark,MS_Windows_10_STIG,xccdf
+Microsoft Windows Firewall with Advanced Security STIG SCAP Benchmark,Windows_Firewall_with_Advanced_Security,xccdf
+Microsoft Windows Server 2016 STIG SCAP Benchmark,Windows_Server_2016_STIG,xccdf
