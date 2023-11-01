@@ -19,34 +19,47 @@ $cklTemplates = Get-ChildItem "$scriptRootPath\ckl_templates"
 
 foreach ($xccdfFile in $xccdfFiles){
     if([System.IO.Path]::GetExtension($xccdfFile) -eq ".xml" ){ # only process xccdf files
-
-        #get xml data for xccdf            
-        [xml]$xccdfXmlDocument = get-content $xccdfFile.FullName
-
-        #get date of scan
-        $timeValue  = ($xccdfXmlDocument.Benchmark.TestResult.'rule-result'[0].time)
-        $dateIndex  = $timeValue.IndexOf("T") 
-        $date       = $timeValue.substring(0, $dateIndex)
-
         #region xccdf information  
+
+            #get xml data for xccdf            
+            [xml]$xccdfXmlDocument = get-content $xccdfFile.FullName
+
+            #get date of scan
+            $timeValue  = ($xccdfXmlDocument.Benchmark.TestResult.'rule-result'[0].time)
+            $dateIndex  = $timeValue.IndexOf("T") 
+            $date       = $timeValue.substring(0, $dateIndex)
+
 
             # get the xccdf hostname            
             $xccdfHOST_NAME = $xccdfXmlDocument.Benchmark.TestResult.target   #get xccdf host information
         
             # get the xccdf stig id              
             $xccdfStigid = ($xccdfXmlDocument.Benchmark.id).replace("xccdf_mil.disa.stig_benchmark_","")
+            $xccdfStigid
 
-
-
-        
         #endregion xccdf information
 
 
-        #region rename file
+        foreach ($cklTemplate in $cklTemplates) {
+            "templates"
+            [xml]$cklXmlDocument = get-content $cklTemplate.FullName
+            $cklTemplateStigid = $cklXmlDocument.CHECKLIST.STIGS.iSTIG.STIG_INFO.SI_DATA[3].SID_DATA #get stig id from the [3] element in STIG_INFO
+            
+            #if the stig id's match, generate a ckl
+            if($cklTemplateStigid -eq  $xccdfStigid){
+                "match"
+            }
+              
+        }
 
 
 
-        #endregion rename file
+
+
+
+
     }
 }
+
+
 
