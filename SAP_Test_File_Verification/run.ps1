@@ -31,7 +31,8 @@ Do the following:
 
 4.  Configure the saplookuptable.csv
 
-        a) ensure that all Test Battery lines are paired with the correct STIG IDs from CKL and XCCDF
+        a) ensure that all Test Bat
+tery lines are paired with the correct STIG IDs from CKL and XCCDF
         
         b) If the list is not complete do the following:
 
@@ -280,6 +281,7 @@ Do the following:
             "titleMatchTest"   = $titleMatchTest
         }
     }
+    $completenessTestObj
 "........[Done]"
 
 #endregion completeness test 
