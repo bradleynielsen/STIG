@@ -108,13 +108,7 @@ foreach ($xccdfFile in $xccdfFiles){
                                 $cklXmlDocument.CHECKLIST.ASSET.HOST_FQDN   = $xccdf_HOST_FQDN 
                                 try{$cklXmlDocument.CHECKLIST.ASSET.HOST_IP = $xccdf_HOST_IP}catch{break}
 
-
-
-
                             #endregion host info
-
-                            Write-Host "Creating CKL for Host: $xccdf_HOST_NAME STIG: $xccdfStigid"
-
 
                             #region set CKL vulns
 
@@ -124,47 +118,47 @@ foreach ($xccdfFile in $xccdfFiles){
                                     foreach($object in $Vuln.STIG_DATA) {
                                         if ( $object.VULN_ATTRIBUTE -eq "Rule_ID"){
                                             $cklRule_ID = $object.ATTRIBUTE_DATA
-
                                         }
-                                    
-                                        #loop over results
-                                        foreach ( $result in $xccdfXmlDocument.Benchmark.TestResult.'rule-result' ){
-
-                                            $xccdfidref    = $result.idref.Replace("xccdf_mil.disa.stig_rule_","")   
-                                            $xccdfrole     = $result.role    
-                                            $xccdftime     = $result.time    
-                                            $xccdfresult   = $result.result  
-                                            $xccdcci       = $result.ident.'#text' | Select-String 'cci'
-                                            $xccdfmessage  = $result.message 
-                                            $xccdffix      = $result.fix     
-                                            $xccdfcheck    = $result.check   
-                                            $xccdfversion  = $result.version   
-
-
-                                            if($xccdfidref -eq $cklRule_ID ){
-                                                if ($xccdfresult -eq "pass"){
-                                                    $xccdfresult = "NotAFinding"
-                                                }
-                                                
-                                                if ($xccdfresult -eq "fail"){
-                                                    $xccdfresult = "Open"
-                                                }                                               
-
-                                                $FINDING_DETAILS = "Reviewed by SCC tool `n Result: $xccdfresult `n Date of scan: $xccdftime `n version: $xccdfversion"
-
-                                                $cklRule_ID
-
-
-                                                #set CKL attributes 
-                                                #Write-Host "Creating CKL for Host: $xccdf_HOST_NAME STIG: $xccdfStigid Setting results for $cklRule_ID " -NoNewline
-                                                #Write-Host $result.result
-                                                                                               
-                                                $Vuln.STATUS          = $xccdfresult
-                                                $Vuln.FINDING_DETAILS = $FINDING_DETAILS
-                                                   
-                                            } 
-                                        } #end results loop
                                     }
+                                    
+                                    #loop over xccdf results and set the corresponding CKL vuln status
+                                    foreach ( $result in $xccdfXmlDocument.Benchmark.TestResult.'rule-result' ){
+
+                                        $xccdfidref    = $result.idref.Replace("xccdf_mil.disa.stig_rule_","")   
+                                        $xccdfrole     = $result.role    
+                                        $xccdftime     = $result.time    
+                                        $xccdfresult   = $result.result  
+                                        $xccdcci       = $result.ident.'#text' | Select-String 'cci'
+                                        $xccdfmessage  = $result.message 
+                                        $xccdffix      = $result.fix     
+                                        $xccdfcheck    = $result.check   
+                                        $xccdfversion  = $result.version   
+
+
+                                        if($xccdfidref -eq $cklRule_ID ){ #match the rule ids
+                                            if ($xccdfresult -eq "pass"){
+                                                $xccdfresult = "NotAFinding"
+                                            }
+                                                
+                                            if ($xccdfresult -eq "fail"){
+                                                $xccdfresult = "Open"
+                                            }
+
+                                            if ($xccdfresult -eq "notapplicable"){
+                                                $xccdfresult = "Not_Applicable"
+                                            }
+
+                                            $FINDING_DETAILS = "Reviewed by SCC tool `n Result: $xccdfresult `n Date of scan: $xccdftime `n version: $xccdfversion"
+
+                                            #set CKL attributes 
+                                            Write-Host "Creating CKL for Host: $xccdf_HOST_NAME STIG: $xccdfStigid Setting results for $cklRule_ID " -NoNewline
+                                            Write-Host $result.result
+                                                                                               
+                                            $Vuln.STATUS          = $xccdfresult
+                                            $Vuln.FINDING_DETAILS = $FINDING_DETAILS
+                                                   
+                                        } 
+                                    } #end xccdf results loop
                                 }
                             #endregion set CKL vulns
 
