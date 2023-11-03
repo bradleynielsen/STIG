@@ -66,90 +66,116 @@ foreach ($xccdfFile in $xccdfFiles){
                 $cklXmlDocument.PreserveWhitespace = $true
             
                 $cklTemplateStigId = $cklXmlDocument.CHECKLIST.STIGS.iSTIG.STIG_INFO.SI_DATA[3].SID_DATA #get stig id from the [3] element in STIG_INFO
-            
-                if($cklTemplateStigid -eq  $xccdfStigid){ #Make a CKL if there is a match
-                    $count += 1
-                    "match count " +$count
-                    #region create CKL
+                
+                #region create CKL 
 
-                        #Clean up variables to be empty strings, not null or array
+                    if($cklTemplateStigid -eq  $xccdfStigid){ #Make a CKL if there is a match
 
-                        #CHECK ROLE
-                        if($xccdf_ROLE -eq $null){
-                            $xccdf_ROLE = "None"
-                        } 
-                        if($xccdf_HOST_IP -eq $null){
-                            $xccdf_HOST_IP = ""
-                        } 
-                        if ( $xccdf_HOST_IP -is [array] )  {
-                            $xccdf_HOST_IP = $xccdf_HOST_IP[0]
-                        }
-                        if ($xccdf_HOST_MAC -eq $null){
-                            $xccdf_HOST_MAC = ""
-                        }
-                        if ( $xccdf_HOST_MAC -is [array] )  {
-                            $xccdf_HOST_MAC = $xccdf_HOST_MAC[0]
-                        }
+                            #region host info
+
+                                #Clean up variables to be empty strings, not null or array
+
+                                #CHECK ROLE
+                                if($xccdf_ROLE -eq $null){
+                                    $xccdf_ROLE = "None"
+                                } 
+                                if($xccdf_HOST_IP -eq $null){
+                                    $xccdf_HOST_IP = ""
+                                } 
+                                if ( $xccdf_HOST_IP -is [array] )  {
+                                    $xccdf_HOST_IP = $xccdf_HOST_IP[0]
+                                }
+                                if ($xccdf_HOST_MAC -eq $null){
+                                    $xccdf_HOST_MAC = ""
+                                }
+                                if ( $xccdf_HOST_MAC -is [array] )  {
+                                    $xccdf_HOST_MAC = $xccdf_HOST_MAC[0]
+                                }
 
                             
-                        #"xccdf_ROLE        "+                  $xccdf_ROLE
-                        #"xccdf_HOST_NAME   "+                  $xccdf_HOST_NAME
-                        #"xccdf_HOST_IP     "+                  $xccdf_HOST_IP   
-                        #"xccdf_HOST_MAC    "+                  $xccdf_HOST_MAC  
-                        #"xccdf_HOST_FQDN   "+                  $xccdf_HOST_FQDN 
-                        #"cklTemplateStigId "+                  $cklTemplateStigId 
-                        #""
+                                #"xccdf_ROLE        "+                  $xccdf_ROLE
+                                #"xccdf_HOST_NAME   "+                  $xccdf_HOST_NAME
+                                #"xccdf_HOST_IP     "+                  $xccdf_HOST_IP   
+                                #"xccdf_HOST_MAC    "+                  $xccdf_HOST_MAC  
+                                #"xccdf_HOST_FQDN   "+                  $xccdf_HOST_FQDN 
+                                #"cklTemplateStigId "+                  $cklTemplateStigId 
+                                #""
 
-                        $cklXmlDocument.CHECKLIST.ASSET.ROLE        = $xccdf_ROLE
-                        $cklXmlDocument.CHECKLIST.ASSET.HOST_NAME   = $xccdf_HOST_NAME.ToString()
-                        $cklXmlDocument.CHECKLIST.ASSET.HOST_IP     = $xccdf_HOST_IP   
-                        $cklXmlDocument.CHECKLIST.ASSET.HOST_MAC    = $xccdf_HOST_MAC  
-                        $cklXmlDocument.CHECKLIST.ASSET.HOST_FQDN   = $xccdf_HOST_FQDN 
-                        try{$cklXmlDocument.CHECKLIST.ASSET.HOST_IP = $xccdf_HOST_IP}catch{break}
+                                $cklXmlDocument.CHECKLIST.ASSET.ROLE        = $xccdf_ROLE
+                                $cklXmlDocument.CHECKLIST.ASSET.HOST_NAME   = $xccdf_HOST_NAME.ToString()
+                                $cklXmlDocument.CHECKLIST.ASSET.HOST_IP     = $xccdf_HOST_IP   
+                                $cklXmlDocument.CHECKLIST.ASSET.HOST_MAC    = $xccdf_HOST_MAC  
+                                $cklXmlDocument.CHECKLIST.ASSET.HOST_FQDN   = $xccdf_HOST_FQDN 
+                                try{$cklXmlDocument.CHECKLIST.ASSET.HOST_IP = $xccdf_HOST_IP}catch{break}
 
-                        $cklFilename = $cklTemplateStigid +" - "+ $xccdf_HOST_NAME 
 
-                        $cklSaveLocation = "$scriptRootPath\ckl_results\"+$cklFilename+".ckl"
-                        $cklXmlDocument.Save($cklSaveLocation)
 
-                    #endregion create CKL
-                } else {}
 
+                            #endregion host info
+
+                            Write-Host "Creating CKL for Host: $xccdf_HOST_NAME STIG: $xccdfStigid"
+
+
+                            #region set CKL vulns
+
+                                foreach( $Vuln in $cklXmlDocument.CHECKLIST.STIGS.iSTIG.VULN ){
+                                
+                                    #get id ; stig data is an array of objects
+                                    foreach($object in $Vuln.STIG_DATA) {
+                                        if ( $object.VULN_ATTRIBUTE -eq "Rule_ID"){
+                                            $cklRule_ID = $object.ATTRIBUTE_DATA
+
+                                        }
+                                    
+                                        #loop over results
+                                        foreach ( $result in $xccdfXmlDocument.Benchmark.TestResult.'rule-result' ){
+
+                                            $xccdfidref    = $result.idref.Replace("xccdf_mil.disa.stig_rule_","")   
+                                            $xccdfrole     = $result.role    
+                                            $xccdftime     = $result.time    
+                                            $xccdfresult   = $result.result  
+                                            $xccdcci       = $result.ident.'#text' | Select-String 'cci'
+                                            $xccdfmessage  = $result.message 
+                                            $xccdffix      = $result.fix     
+                                            $xccdfcheck    = $result.check   
+                                            $xccdfversion  = $result.version   
+
+
+                                            if($xccdfidref -eq $cklRule_ID ){
+                                                if ($xccdfresult -eq "pass"){
+                                                    $xccdfresult = "NotAFinding"
+                                                }
+                                                
+                                                if ($xccdfresult -eq "fail"){
+                                                    $xccdfresult = "Open"
+                                                }                                               
+
+                                                $FINDING_DETAILS = "Reviewed by SCC tool `n Result: $xccdfresult `n Date of scan: $xccdftime `n version: $xccdfversion"
+
+                                                $cklRule_ID
+
+
+                                                #set CKL attributes 
+                                                #Write-Host "Creating CKL for Host: $xccdf_HOST_NAME STIG: $xccdfStigid Setting results for $cklRule_ID " -NoNewline
+                                                #Write-Host $result.result
+                                                                                               
+                                                $Vuln.STATUS          = $xccdfresult
+                                                $Vuln.FINDING_DETAILS = $FINDING_DETAILS
+                                                   
+                                            } 
+                                        } #end results loop
+                                    }
+                                }
+                            #endregion set CKL vulns
+
+                            $cklFilename = $cklTemplateStigid +" - "+ $xccdf_HOST_NAME 
+                            $cklSaveLocation = "$scriptRootPath\ckl_results\"+$cklFilename+".ckl"
+                            $cklXmlDocument.Save($cklSaveLocation)
+                    } else {}
+
+                #endregion create CKL
             }
         #endregion ckl loop
     }
 }
 #endregion xccdf loop
-
-
-
-
-<#
-
-
-# Read the existing file
-[xml]$xmlDoc = Get-Content $xmlFileName
-
-# If it was one specific element you can just do like so:
-$xmlDoc.config.button.command = "C:\Prog32\folder\test.jar"
-# however this wont work since there are multiple elements
-
-# Since there are multiple elements that need to be 
-# changed use a foreach loop
-foreach ($element in $xmlDoc.config.button)
-{
-    $element.command = "C:\Prog32\folder\test.jar"
-}
-    
-# Then you can save that back to the xml file
-$xmlDoc.Save("c:\savelocation.xml")
-
-
-
-
-
-
-$orange = $xml.Fruits.Fruit | ? { [int]$_.Code -eq 2 }
-
-#>
-
