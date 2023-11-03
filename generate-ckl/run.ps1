@@ -6,24 +6,12 @@ Compatable with: DISA STIG Viewer :: 2.17
 #>
 # endregion Read Me
 
-
-
-#region config
-#endregion config
-
-
 #region init
 
     $scriptRootPath     = $PSScriptRoot  # relative path where the script is     
     $count = 0
 
 #endregion init
-
-
-#region functions
-    
-
-#endregion functions
 
 
 #get list of xccdf files
@@ -165,7 +153,8 @@ foreach ($xccdfFile in $xccdfFiles){
                             $cklFilename = $cklTemplateStigid +" - "+ $xccdf_HOST_NAME 
                             $cklSaveLocation = "$scriptRootPath\ckl_results\"+$cklFilename+".ckl"
                             $cklXmlDocument.Save($cklSaveLocation)
-                    } else {}
+                    }
+                     else {}
 
                 #endregion create CKL
             }
