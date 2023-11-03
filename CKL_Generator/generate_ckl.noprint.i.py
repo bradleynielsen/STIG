@@ -3,6 +3,8 @@ import shutil
 import time
 import csv
 import os
+
+#init
 stigSummaryCsvPath = ".\\STIG_Summary.csv"
 summarycsvpath     = ".\\summary.csv"
 trackercsvpath     = ".\\tracker.csv"
@@ -14,11 +16,14 @@ startTimer         = time.perf_counter()
 csvCreated         = False
 count              = 0
 notreviewed        = 0
+
+
+
 for root, dirs, files in os.walk(xccdfdir):
     for xccdfFilename in files:        
-        #parse the xccdf XML data        
-        xccdftree     = ET.parse('.\\xccdf\\'+xccdfFilename)        
-        xccdftreeroot = xccdftree.getroot()
+        #parse the xccdf XML data                
+        xccdftree     = ET.parse('.\\xccdf\\'+xccdfFilename)            
+        xccdftreeroot = xccdftree.getroot()                             
         testResult    = xccdftreeroot.find("{http://checklists.nist.gov/xccdf/1.2}TestResult")
         targetFacts   = testResult.find("{http://checklists.nist.gov/xccdf/1.2}target-facts")        
         #get target host information 
@@ -32,15 +37,18 @@ for root, dirs, files in os.walk(xccdfdir):
                 xccdf_mac = factElement.text
             if (name == "urn:scap:fact:asset:identifier:fqdn"):         #fqdn
                 xccdf_fqdn = factElement.text
+
         #create the ckl file for the xccdf host
         for root, dirs, files in os.walk(templateCKLdir):
-            for filename in files:        
+            for filename in files:
+
                 source = os.path.join( os.path.abspath(root), filename )        
                 cklfilename = xccdf_host_name+".ckl"
                 destination = os.path.join(tempdir,cklfilename)
                 shutil.copy(source,destination)
                 time.sleep(1)
-                print("Generating CKL file for "+xccdf_host_name)                
+                print("Generating CKL file for "+xccdf_host_name)    
+
         #process the CKL file                
         for root, dirs, filenames in os.walk(tempdir):            
             for cklFilename in filenames:                
@@ -63,9 +71,9 @@ for root, dirs, files in os.walk(xccdfdir):
                     element_HOST_MAC.text  = xccdf_mac
                     element_HOST_FQDN.text = xccdf_fqdn                    
                     #Process the VULN elements
-                    for iStig_child in element_iStig:       
-                        #select only "VULN" elements
-                        if iStig_child.tag == 'VULN':
+                    for iStig_child in element_iStig:     #loop over the elements under iStig  
+                        
+                        if iStig_child.tag == 'VULN':  #select only "VULN" elements
                             element_VULN = iStig_child
                             #init the ID vars
                             cklVulnID      = ""
@@ -79,7 +87,7 @@ for root, dirs, files in os.walk(xccdfdir):
                                     if vulnAttributeTag == 'Vuln_Num':     
                                         cklVulnID = element_stigdata[1].text    #get the CKL Vul ID                                                                          
                                     if vulnAttributeTag == 'Rule_ID':                                        
-                                        cklRuleID      = element_stigdata[1].text   #get the CKL Rule ID                                        
+                                        cklRuleID = element_stigdata[1].text   #get the CKL Rule ID                                        
                                         #When both IDs are found in the CKL VULN...
                                         if (cklVulnID !="" and cklRuleID != ""):
                                             #init the vars:
@@ -130,60 +138,6 @@ for root, dirs, files in os.walk(xccdfdir):
                                                             element_VULN.find('FINDING_DETAILS').text        = finding_details
                                                             element_VULN.find('COMMENTS').text               = trackerComments                                                                                                                   
                                                             break                                                        
-                                            #XCCDF has no results, try the custom script summary csv
-                                            if (xccdfValueUsed == False):                                                
-                                                try:
-                                                    summarycsv = csv.DictReader(open(summarycsvpath))
-                                                    summaryValueUsed = False
-                                                    #loop over the summary
-                                                    for row in summarycsv:                                                        
-                                                        if (row['Computer         ']) == xccdf_host_name:
-                                                            try:
-                                                                if row[cklVulnID] == "Pass":                                                                
-                                                                    #print("Updating "+xccdf_host_name+" CKL "+cklVulnID+" with data from Summary CSV", end = '')
-                                                                    trackerUsed = False
-                                                                    count += 1
-                                                                    element_VULN.find('STATUS').text = "NotAFinding"                                                                    
-                                                                    trackercsv = csv.DictReader(open(trackercsvpath))                                
-                                                                    for row in trackercsv:
-                                                                        # get the finding details and comments value from the tracker csv
-                                                                        trackerVul_ID          = (row["Vul_ID"])
-                                                                        trackerFinding_Details = (row["Finding_Details"])
-                                                                        trackerComments        = (row["Comments"])
-                                                                        trackerInitial_Status  = (row["Initial_Status"])
-                                                                        trackerSet_Status      = (row["Set_Status"])                                                                    
-                                                                        if trackerVul_ID != cklVulnID:
-                                                                            continue
-                                                                        if trackerVul_ID == cklVulnID:                                                                                                                                               
-                                                                            element_VULN.find('FINDING_DETAILS').text        = trackerFinding_Details
-                                                                            element_VULN.find('COMMENTS').text               = trackerComments
-                                                                            trackerUsed = True                                                                                                                                           
-                                                                        summaryValueUsed = True
-                                                                if row[cklVulnID] == "Fail":
-                                                                    #print("Updating "+xccdf_host_name+" CKL "+cklVulnID+" with data from Summary CSV", end = '')
-                                                                    trackerUsed = False
-                                                                    element_VULN.find('STATUS').text = "Open"
-                                                                    #if the summary status is fail, get the value from the tracker csv
-                                                                    trackercsv = csv.DictReader(open(trackercsvpath))                                
-                                                                    for row in trackercsv:
-                                                                        trackerVul_ID          = (row["Vul_ID"])
-                                                                        trackerFinding_Details = (row["Finding_Details"])
-                                                                        trackerComments        = (row["Comments"])
-                                                                        trackerInitial_Status  = (row["Initial_Status"])
-                                                                        trackerSet_Status      = (row["Set_Status"])
-                                                                        if trackerVul_ID != cklVulnID:
-                                                                            continue
-                                                                        if trackerVul_ID == cklVulnID:                                                                        
-                                                                            element_VULN.find('STATUS').text                 = trackerSet_Status                                                
-                                                                            element_VULN.find('FINDING_DETAILS').text        = trackerFinding_Details
-                                                                            element_VULN.find('COMMENTS').text               = trackerComments
-                                                                            trackerUsed = True                                                                        
-                                                            except:
-                                                                #nothing found in summary csv
-                                                                continue
-                                                except:
-                                                    #summarycsv failed to load
-                                                    continue
                         else:
                             #iStig child element is not 'VULN'
                             continue
