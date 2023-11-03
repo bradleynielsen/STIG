@@ -13,8 +13,8 @@ STIG title_VxRX_system_hostname_YYYYMMDD
 
 #region config
 
-    $systemName   = ""     #<<<<<<< Set system name here
-    $delimiter    = " "    #<<<<<<< Set delimiter name here
+    $systemName   = "(CUI)CNIC_N6S_PSS_NESS-Lenel"     #<<<<<<< Set system name here
+    $delimiter    = "_"    #<<<<<<< Set delimiter name here
     $subDirOption = $false #<<<<<<< Set option for subdirectory [ $true | $false ] - Set to $true If you want you files grouped by STIG ID
 
 #endregion config
@@ -83,8 +83,12 @@ $xccdfFiles   = Get-ChildItem "$scriptRootPath\old"
                 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ARRANGE FILE NAME HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 # comment/uncomment the rows to configure how the name will be  OR  make your own 
 
+
+
+                $newFileName = $systemName + $delimiter + $xccdfHOST_NAME + $delimiter + $xccdfTitleVersionRelease + $delimiter + $date + "-XCCDF.xml"
+                
                 # [HOSTNAME]_STIG_DATE-XCCDF.xml
-                $newFileName = $xccdfHOST_NAME + $delimiter + $xccdfTitleVersionRelease + $delimiter + $date + "-XCCDF.xml"
+                #$newFileName = $xccdfHOST_NAME + $delimiter + $xccdfTitleVersionRelease + $delimiter + $date + "-XCCDF.xml"
 
                 # STIG_[HOSTNAME]_DATE-XCCDF.xml
                 #$newFileName = $xccdfTitleVersionRelease + $delimiter + "[" + $xccdfHOST_NAME + "]" + $delimiter + $date + "-XCCDF.xml"
