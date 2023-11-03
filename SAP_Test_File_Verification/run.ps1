@@ -1,4 +1,6 @@
 <#
+SAP completeness test
+
 ----------------------
 How to run the script:
 ----------------------
