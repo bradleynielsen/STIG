@@ -271,17 +271,16 @@ tery lines are paired with the correct STIG IDs from CKL and XCCDF
             "SAP Hostname"     = $lineHostname
             "SAP Test Battery" = $lineTestBattery
             "Type"             = $fileType
-            "fielExists"       = $fielExists
             "File Name"        = $filename
             "Hostname"         = $Hostname
             "STIG Title"       = $stigtitle
             "STIG ID"          = $STIGID        
             "Version"          = $Version       
             "Release"          = $Release       
+            "fielExists"       = $fielExists
             "titleMatchTest"   = $titleMatchTest
         }
     }
-    $completenessTestObj
 "........[Done]"
 
 #endregion completeness test 
