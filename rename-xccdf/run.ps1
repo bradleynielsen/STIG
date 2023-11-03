@@ -27,51 +27,74 @@ STIG title_VxRX_system_hostname_YYYYMMDD
 #get list of xccdf files
 $xccdfFiles   = Get-ChildItem "$scriptRootPath\old"
 
-foreach ($xccdfFile in $xccdfFiles){
-    if([System.IO.Path]::GetExtension($xccdfFile) -eq ".xml" ){ # only process xccdf files
 
-        #get xml data for xccdf            
-        [xml]$xccdfXmlDocument = get-content $xccdfFile.FullName
+#region xccdf file loop
 
-        #get date of scan
-        $timeValue  = ($xccdfXmlDocument.Benchmark.TestResult.'rule-result'[0].time)
-        $dateIndex  = $timeValue.IndexOf("T") 
-        $date       = $timeValue.substring(0, $dateIndex)
+    foreach ($xccdfFile in $xccdfFiles){
+        if([System.IO.Path]::GetExtension($xccdfFile) -eq ".xml" ){ # only process xccdf files
 
-        #region xccdf information  
+            #get xml data for xccdf            
+            [xml]$xccdfXmlDocument = get-content $xccdfFile.FullName
 
-            # get the xccdf hostname            
-            $xccdfHOST_NAME = $xccdfXmlDocument.Benchmark.TestResult.target   #get xccdf host information
+            #get date of scan
+            $timeValue  = ($xccdfXmlDocument.Benchmark.TestResult.'rule-result'[0].time)
+            $dateIndex  = $timeValue.IndexOf("T") 
+            $date       = $timeValue.substring(0, $dateIndex)
+
+            #region xccdf information  
+
+                # get the xccdf hostname            
+                $xccdfHOST_NAME = $xccdfXmlDocument.Benchmark.TestResult.target   #get xccdf host information
         
-            # get the xccdf stig id              
-            $stigid = ($xccdfXmlDocument.Benchmark.id).replace("xccdf_mil.disa.stig_benchmark_","")
+                # get the xccdf stig id              
+                $stigid = ($xccdfXmlDocument.Benchmark.id).replace("xccdf_mil.disa.stig_benchmark_","")
 
-            # get the xccdf version             
-            $xccdfRelease = $xccdfXmlDocument.Benchmark.version.'#text'      # Get xccdf version number
+                # get the xccdf version             
+                $xccdfRelease = $xccdfXmlDocument.Benchmark.version.'#text'      # Get xccdf version number
 
-            $xccdfTitleVersionRelease = $stigid+$delimiter+$xccdfRelease
+                $xccdfTitleVersionRelease = $stigid+$delimiter+$xccdfRelease
 
-            #"Processing $xccdfHOST_NAME $xccdfTitleVersionRelease"
+                #"Processing $xccdfHOST_NAME $xccdfTitleVersionRelease"
         
-        #endregion xccdf information
+            #endregion xccdf information
 
 
-        #region rename file
+            #region rename file
 
 
-            $xccdfUpdateDirectory = "$scriptRootPath\updated\$stigid" # directory for new files
+                $xccdfUpdateDirectory = "$scriptRootPath\updated\$stigid" # directory for new files
             
-            #create a stig folder
-            if(!(test-path $xccdfUpdateDirectory)){
-                mkdir $PSScriptRoot/updated/$stigid
-            }
+                #create a stig folder
+                if(!(test-path $xccdfUpdateDirectory)){
+                    mkdir $PSScriptRoot/updated/$stigid
+                }
             
-            # <<<<<<<<<<<<<<<<<<<<<<< ARRANGE FILE NAME HERE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            $destination = $xccdfUpdateDirectory + "\" + $xccdfTitleVersionRelease + $delimiter + "[" + $xccdfHOST_NAME + "]" + $delimiter + $date + "-XCCDF.xml"
+                # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ARRANGE FILE NAME HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                # comment/uncomment the rows to configure how the name will be  OR  make your own 
 
-            Copy-Item -Path $xccdfFile.FullName -Destination $destination
 
-        #endregion rename file
+
+                # STIG_[HOSTNAME]_DATE-XCCDF.xml
+                #$newFileName = $xccdfTitleVersionRelease + $delimiter + "[" + $xccdfHOST_NAME + "]" + $delimiter + $date + "-XCCDF.xml"
+            
+                # STIG-HOSTNAME-XCCDF.xml
+                #$newFileName =   $stigid+"-"+$xccdfHOST_NAME+"-"+"-XCCDF.xml"
+
+                # HOSTNAME-STIG-XCCDF.xml
+                $newFileName =   $xccdfHOST_NAME+"-"+$stigid+"-"+"-XCCDF.xml"
+
+
+
+                # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ARRANGE FILE NAME HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            
+
+
+            
+                #create new file
+                $destination = $xccdfUpdateDirectory + "\" + $newFileName 
+                Copy-Item -Path $xccdfFile.FullName -Destination $destination
+
+            #endregion rename file
+        }
     }
-}
-
+#endregion xccdf file loop
