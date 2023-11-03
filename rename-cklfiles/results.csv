@@ -1,4 +1,5 @@
 "Original Name","Hostname","STIG"
+<<<<<<< HEAD
 "Cisco_IOS-XE_Router_NDM_STIG - SW-187P-A","SW-187P-A","Cisco IOS-XE Router NDM STIG_V2R8"
 "Cisco_IOS-XE_Router_NDM_STIG - SW-187S-A","SW-187S-A","Cisco IOS-XE Router NDM STIG_V2R8"
 "IE_11_STIG - DC-1","DC-1","IE 11 STIG_V2R4"
@@ -61,3 +62,7 @@
 "Windows_Server_2016_STIG - NMS-2","NMS-2","Windows Server 2016 STIG_V2R7"
 "Windows_Server_2016_STIG - WSUS-1","WSUS-1","Windows Server 2016 STIG_V2R7"
 "Windows_Server_2016_STIG - WSUS-2","WSUS-2","Windows Server 2016 STIG_V2R7"
+=======
+"d","LENEL-BADGE-1","MS Defender Antivirus_V2R4"
+"nb","NMS-2","MS Edge STIG_V1R7"
+>>>>>>> generateCKLpowershell
