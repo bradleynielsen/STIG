@@ -1,4 +1,6 @@
 ﻿<#
+Rename xccdf
+
 File name
 MS Windows Server 2019 STIG_V2R3_CERS-VLAB-CAD2_20220321
 
