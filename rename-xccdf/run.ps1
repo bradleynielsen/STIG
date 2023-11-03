@@ -13,8 +13,9 @@ STIG title_VxRX_system_hostname_YYYYMMDD
 
 #region config
 
-    $systemName = ""   #<<<<<<< SET SYSTEM NAME HERE
-    $delimiter  = " "
+    $systemName   = ""     #<<<<<<< Set system name here
+    $delimiter    = " "    #<<<<<<< Set delimiter name here
+    $subDirOption = $false #<<<<<<< Set option for subdirectory [ $true | $false ] - Set to $true If you want you files grouped by STIG ID
 
 #endregion config
 
@@ -22,7 +23,6 @@ STIG title_VxRX_system_hostname_YYYYMMDD
 #init
     $scriptRootPath     = $PSScriptRoot  # relative path where the script is     
     remove-item $scriptRootPath\updated\* -Recurse -Include *
-    Pause
 #endregion init
 
 
@@ -64,17 +64,27 @@ $xccdfFiles   = Get-ChildItem "$scriptRootPath\old"
             #region rename file
 
 
-                $xccdfUpdateDirectory = "$scriptRootPath\updated\$stigid" # directory for new files
-            
-                #create a stig folder
-                if(!(test-path $xccdfUpdateDirectory)){
-                    mkdir $PSScriptRoot/updated/$stigid
+                if($subDirOption -eq $true) {
+
+                    $xccdfUpdateDirectory = "$scriptRootPath\updated\$stigid" # directory for new files in sub directory
+
+                    #create a stig folder
+                    if(!(test-path $xccdfUpdateDirectory)){
+                        mkdir $scriptRootPath/updated/$stigid
+                    }
+
+                } else {
+
+                    $xccdfUpdateDirectory = "$scriptRootPath\updated" # directory for new files without sub directory
+
                 }
+
             
                 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ARRANGE FILE NAME HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 # comment/uncomment the rows to configure how the name will be  OR  make your own 
 
-
+                # [HOSTNAME]_STIG_DATE-XCCDF.xml
+                $newFileName = $xccdfHOST_NAME + $delimiter + $xccdfTitleVersionRelease + $delimiter + $date + "-XCCDF.xml"
 
                 # STIG_[HOSTNAME]_DATE-XCCDF.xml
                 #$newFileName = $xccdfTitleVersionRelease + $delimiter + "[" + $xccdfHOST_NAME + "]" + $delimiter + $date + "-XCCDF.xml"
@@ -83,20 +93,21 @@ $xccdfFiles   = Get-ChildItem "$scriptRootPath\old"
                 #$newFileName =   $stigid+"-"+$xccdfHOST_NAME+"-"+"-XCCDF.xml"
 
                 # HOSTNAME-STIG-XCCDF.xml
-                $newFileName =   $xccdfHOST_NAME+"-"+$stigid+"-"+"-XCCDF.xml"
-
+                #$newFileName =   $xccdfHOST_NAME+"-"+$stigid+"-XCCDF.xml"
 
 
                 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ARRANGE FILE NAME HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             
-
-
+            
             
                 #create new file
                 $destination = $xccdfUpdateDirectory + "\" + $newFileName 
+                write-host -ForegroundColor green "Making file: " -NoNewline
+                write-host -ForegroundColor white $newFileName
                 Copy-Item -Path $xccdfFile.FullName -Destination $destination
 
             #endregion rename file
         }
     }
 #endregion xccdf file loop
+write-host -BackgroundColor Black -ForegroundColor yellow "Your files are in the 'updated' folder"
