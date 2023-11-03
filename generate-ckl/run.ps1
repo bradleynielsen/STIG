@@ -12,6 +12,12 @@
 #endregion init
 
 
+#functions
+    
+
+#endregion functions
+
+
 #get list of xccdf files
 $xccdfFiles   = Get-ChildItem "$scriptRootPath\xccdf"
 $cklTemplates = Get-ChildItem "$scriptRootPath\ckl_templates"
@@ -47,7 +53,9 @@ foreach ($xccdfFile in $xccdfFiles){
             
             #if the stig id's match, generate a ckl
             if($cklTemplateStigid -eq  $xccdfStigid){
-                "match"
+                
+
+
             }
               
         }
@@ -63,3 +71,18 @@ foreach ($xccdfFile in $xccdfFiles){
 
 
 
+
+
+
+
+
+
+# Since there are multiple elements that need to be 
+# changed use a foreach loop
+foreach ($element in $xmlDoc.config.button)
+{
+    $element.command = "C:\Prog32\folder\test.jar"
+}
+    
+# Then you can save that back to the xml file
+$xmlDoc.Save("c:\savelocation.xml")
