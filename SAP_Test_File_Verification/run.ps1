@@ -17,15 +17,15 @@ Do the following:
 1.  Copy test files in the respective folders
 
 2.  Review the "config" folder:
-        • assessmentmethods.csv (This is the list of Hosts and test battery from the SAP [Assessment Methods] tab)
-        • saplookuptable.csv (This is used to tie the SAP Test Battery list to the files's STIG ID.)
+        ï¿½ assessmentmethods.csv (This is the list of Hosts and test battery from the SAP [Assessment Methods] tab)
+        ï¿½ saplookuptable.csv (This is used to tie the SAP Test Battery list to the files's STIG ID.)
 
 3.  Configure the assessmentmethods.csv 
 
         a) Copy the SAP [Assessment Methods] columns
-            • Test Target - Hostname
-            • IP Address
-            • Test Battery
+            ï¿½ Test Target - Hostname
+            ï¿½ IP Address
+            ï¿½ Test Battery
 
         b) Paste this into the file called "assessmentmethods.csv"
 
@@ -37,8 +37,8 @@ tery lines are paired with the correct STIG IDs from CKL and XCCDF
         b) If the list is not complete do the following:
 
             i) Run this script to produce a list of unique IDs in the output folder. There will be two files:
-                • UniqueSTIGIDs.txt
-                • UniqueTestBatteryList.txt
+                ï¿½ UniqueSTIGIDs.txt
+                ï¿½ UniqueTestBatteryList.txt
 
             ii) Copy the UniqueSTIGIDs values from "UniqueSTIGIDs.txt" into "saplookuptable.csv" 
                  - copy UniqueSTIGIDs.txt 
@@ -56,11 +56,11 @@ tery lines are paired with the correct STIG IDs from CKL and XCCDF
 6.  Open the "output" folder to view the output from the script
         a) "completenessTest.csv" 
                 will give you insight on:
-                • Missing files for each test battery
-                • Duplicate files for each test battery
-                • Inconsistent STIG IDs between the SAP <> Filename <> STIG data
-                • Inconsistent STIG versions between the STIGS
-                • Inconsistent STIG versions between the STIGS   
+                ï¿½ Missing files for each test battery
+                ï¿½ Duplicate files for each test battery
+                ï¿½ Inconsistent STIG IDs between the SAP <> Filename <> STIG data
+                ï¿½ Inconsistent STIG versions between the STIGS
+                ï¿½ Inconsistent STIG versions between the STIGS   
 
         b) "fileValues.csv" 
             Details from inside the CKL and XCCDF files
@@ -130,6 +130,8 @@ tery lines are paired with the correct STIG IDs from CKL and XCCDF
                 }
                 
                 $sapTestBattery = $sapLookupTable.Where({$stigid -eq $_.stigid -and $_.type -eq "ckl"}  ).sapTestBattery 
+                
+               
 
                 $titleMatchTest = $null
                 if($stigTitle){
@@ -175,7 +177,7 @@ tery lines are paired with the correct STIG IDs from CKL and XCCDF
                 $xccdfVersion   = [int]($xccdfXmlDocument.Benchmark.version.'#text').Split(".")[0]                              # Get xccdf version number
                 $xccdfRelease   = [int]($xccdfXmlDocument.Benchmark.version.'#text').Split(".")[1]                              # Get xccdf release number
                 $sapTestBattery = $sapLookupTable.Where({$xccdfStigId -eq $_.stigid -and $_.type -eq "xccdf"}  ).sapTestBattery # Get SAP Test battery name
-
+                
                 $titleMatchTest = $null
                 if($xccdfStigTitle){
                     if($xccdfStigTitle -eq $sapTestBattery){
