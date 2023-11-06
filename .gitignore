@@ -1,3 +1,7 @@
 *.ckl
 *XCCDF*.xml
 *desktop.ini
+*saplookuptable.csv
+*UniqueSTIGIDs.txt
+*completenessTest.csv
+*fileValues.csv
