@@ -57,7 +57,7 @@ Do the following:
                 • Duplicate files for each test battery
                 • Inconsistent STIG IDs between the SAP <> Filename <> STIG data
                 • Inconsistent STIG versions between the STIGS
-                • Inconsistent STIG versions between the STIGS   
+
 
         b) "fileValues.csv" 
             Details from inside the CKL and XCCDF files
