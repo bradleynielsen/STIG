@@ -1,7 +1,6 @@
-/get-disastiglist/download/*.*
 *.ckl
 *XCCDF*.xml
 *desktop.ini
-
+/download/*.*
 
 
