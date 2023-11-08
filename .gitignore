@@ -1,8 +1,6 @@
-/get-disastiglist/download/*.*
 /get-disastiglist/download/**
 *.ckl
 *XCCDF*.xml
 *desktop.ini
-**results.csv
-/rename-cklfiles/results.csv
-results
+*results.csv
+*.pdf
