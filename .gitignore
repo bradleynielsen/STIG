@@ -1,4 +1,5 @@
 *.ckl
 *XCCDF*.xml
 *desktop.ini
-get-disastiglist/download/*
+/get-disastiglist/download/*
+!get-disastiglist/download
