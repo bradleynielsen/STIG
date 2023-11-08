@@ -78,7 +78,7 @@ foreach ($cklFile in $cklFiles){
             # <<<<<< ARRANGE FILE NAME HERE >>>>>>>>
             #$destination = $cklUpdateDirectory+"\"+$cklTitleVersionRelease+$delimiter+$cklHOST_NAME+$delimiter+$date+".ckl"
             #$destination = $cklUpdateDirectory+"\"+$cklHOST_NAME+$cklTitleVersionRelease+$delimiter+$delimiter+$date+".ckl"
-            $destination = $cklUpdateDirectory+"\"+$systemName+$delimiter+$cklHOST_NAME+$delimiter+$cklTitleVersionRelease+".ckl"
+            $destination = $cklUpdateDirectory+"\"+$systemName+$delimiter+$cklHOST_NAME+$delimiter+$cklTitleVersionRelease+$delimiter+$date+".ckl"
 
             Copy-Item -Path $cklFile.FullName -Destination $destination
 
