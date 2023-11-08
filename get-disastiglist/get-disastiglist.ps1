@@ -1,4 +1,7 @@
-﻿#"DataTables_Table_0_length"
+﻿$download = $false
+
+
+#"DataTables_Table_0_length"
 Remove-Variable -Name * -ErrorAction SilentlyContinue
 #$titleValue = $null
 cls
@@ -57,21 +60,19 @@ foreach ($tr in $trDivs){
     $uri = $lineObject.link
 
     if ($titleValue){
-        $pathIndex = (($uri.Split("/")).count) - 1
-        $nameArray = $uri.Split("/")
-        $filename  = $nameArray[$pathIndex]
-
-        $dlPath = $scriptRootPath+"\download\"+$filename
-
-        "downloading     $titleValue "
-        Invoke-WebRequest -URI $uri -OutFile $dlPath
-        Start-Sleep -Seconds 1
-          
+        if($download -eq $true){
+            $pathIndex = (($uri.Split("/")).count) - 1
+            $nameArray = $uri.Split("/")
+            $filename  = $nameArray[$pathIndex]
+            $dlPath = $scriptRootPath+"\download\"+$filename
+            "downloading $titleValue"
+            Invoke-WebRequest -URI $uri -OutFile $dlPath
+            Start-Sleep -Seconds 1
+        }
     }
-
 }
-
+"writing csv fiele to 'disaStigList.csv'"
 $results | Sort-Object -Property date -Descending  | export-csv -Path   "$scriptRootPath\disaStigList.csv" -NoTypeInformation
 
-    #$dlPath = $env:HOMEPATH+"\tempsfdsadf.bin"
-    #(New-Object System.Net.WebClient).DownloadFile($uri, $dlPath)
+#$dlPath = $env:HOMEPATH+"\tempsfdsadf.bin"
+#(New-Object System.Net.WebClient).DownloadFile($uri, $dlPath)
