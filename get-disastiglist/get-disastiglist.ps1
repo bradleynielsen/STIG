@@ -65,7 +65,7 @@ foreach ($tr in $trDivs){
 
         "downloading     $titleValue "
         Invoke-WebRequest -URI $uri -OutFile $dlPath
-        Start-Sleep -Seconds 5  
+        Start-Sleep -Seconds 1
           
     }
 
