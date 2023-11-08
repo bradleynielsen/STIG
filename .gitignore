@@ -1,6 +1,6 @@
 /get-disastiglist/download/**
 *.ckl
 *XCCDF*.xml
-#*desktop.ini
+*desktop.ini
 *results.csv
 *.pdf
