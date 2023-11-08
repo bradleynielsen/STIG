@@ -71,7 +71,8 @@ foreach ($tr in $trDivs){
     }
     $lineObject.title = $titleValue 
     $lineObject.date  = $dateValue
+    $lineObject
     $results +=     $lineObject
 }
 
-$results  | export-csv -Path   "$scriptRootPath\disaStigList.csv" -NoTypeInformation
+$results | Sort-Object -Property date -Descending  | export-csv -Path   "$scriptRootPath\disaStigList.csv" -NoTypeInformation
