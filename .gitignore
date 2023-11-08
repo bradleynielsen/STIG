@@ -2,5 +2,5 @@
 *.ckl
 *XCCDF*.xml
 *desktop.ini
-results.csv
+**results.csv
 /rename-cklfiles/results.csv
