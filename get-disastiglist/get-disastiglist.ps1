@@ -1,35 +1,33 @@
 ﻿#"DataTables_Table_0_length"
-
+Remove-Variable -Name * -ErrorAction SilentlyContinue
+#$titleValue = $null
 cls
 $scriptRootPath =  $PSScriptRoot
-
+try{mkdir $scriptRootPath\download -ErrorAction SilentlyContinue}catch{}
 $webAddress =  'https://public.cyber.mil/stigs/downloads'
 $webPage = Invoke-WebRequest -Uri $webAddress 
 
-$trDivs = $webPage.ParsedHtml.IHTMLDocument3_getElementsByTagName("tr")
 
+$trDivs = $webPage.ParsedHtml.IHTMLDocument3_getElementsByTagName("tr")
 
 $results = @()
 
+$lineObject = [PSCustomObject]@{
+    title = '-'
+    date  = '-'
+    link  = '-'
+}
 foreach ($tr in $trDivs){
     
     $trChildren = $tr.children
-
     foreach ($td in $trChildren){
 
         $tdChildren = $td.children
-
-        $lineObject = [PSCustomObject]@{
-            title = '-'
-            date  = '-'
-            link  = '-'
-        }
         
         #set title and download link
         if ($td.className -eq "title_column" ){
             $keyName = $td.className
             foreach($tdChild in $tdChildren){
-                
                 if ($tdChild.tagName -eq "span" ){
                      $titleValue = $tdChild.innerText
                 }
@@ -56,10 +54,9 @@ foreach ($tr in $trDivs){
     $lineObject.link  = $linkValue
     #$lineObject
     $results +=     $lineObject
-
     $uri = $lineObject.link
 
-    if ($uri){
+    if ($titleValue){
         $pathIndex = (($uri.Split("/")).count) - 1
         $nameArray = $uri.Split("/")
         $filename  = $nameArray[$pathIndex]
@@ -68,7 +65,7 @@ foreach ($tr in $trDivs){
 
         "downloading     $titleValue "
         Invoke-WebRequest -URI $uri -OutFile $dlPath
-        Start-Sleep -Seconds 15  
+        Start-Sleep -Seconds 5  
           
     }
 
