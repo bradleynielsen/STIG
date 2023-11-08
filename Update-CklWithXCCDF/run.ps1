@@ -1,4 +1,5 @@
-﻿#region Read Me
+﻿cls
+#region Read Me
 <#
 Title          : generate-ckl 
 Compatable with: DISA STIG Viewer :: 2.17
@@ -8,14 +9,14 @@ Compatable with: DISA STIG Viewer :: 2.17
 
 #region config
 
-$systemName = "(CUI)CNIC_N6S_PSS_NESS-Lenel"   #<<<<<<< SET SYSTEM NAME HERE
-$delimiter  = "_"                              #<<<<<<< SET the seperator here
+    $systemName = "(CUI)CNIC_N6S_PSS_NESS-Lenel"   #<<<<<<< SET SYSTEM NAME HERE
+    $delimiter  = "_"                              #<<<<<<< SET the seperator here
 
 
 
-#[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
-$appendOption = $null
-$appendOption = [System.Windows.Forms.MessageBox]::Show('Click Yes to append, No to overwrite' , "Append XCCDF resutls to CKL?" , 4)
+    #[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
+    $appendOption = $null
+    $appendOption = [System.Windows.Forms.MessageBox]::Show('Click Yes to append, No to overwrite' , "Append XCCDF resutls to CKL?" , 4)
 
 
 
@@ -31,27 +32,27 @@ $appendOption = [System.Windows.Forms.MessageBox]::Show('Click Yes to append, No
 #endregion init
 
 #region ckl loop 
-"ckl loop"
+    #"ckl loop"
     foreach ($cklFile in $cklFiles) {
-"getting xccdf files"        
+        #"getting xccdf files"        
         $xccdfFiles = Get-ChildItem "$scriptRootPath\initial_files\xccdf"
         #init the date
         $date = Get-Date -Format yyyy-MM-dd
-"loading ckl xml info"        
+        #"loading ckl xml info"        
         ($cklXmlDocument = [xml]::new()).Load((Convert-Path -LiteralPath $cklFile.FullName))
         $cklXmlDocument.PreserveWhitespace = $true
-"fetching stig id"        
+        #"fetching stig id"        
         #STIG_ID
         $cklStigId = ($cklXmlDocument.CHECKLIST.STIGS.iSTIG.STIG_INFO.SI_DATA | Where-Object {$_.SID_NAME -eq 'stigid'}).sid_data #get stig id from the element STIG_INFO
-"fetching host id"        
+        #"fetching host id"        
 
         #HOST_ID
         $cklHOST_ID = $cklXmlDocument.CHECKLIST.ASSET.HOST_NAME
 
         $statusString = "Processing $cklHOST_ID - $cklStigId..." 
-        Write-Host $statusString 
+        Write-Host $statusString -NoNewline
 
-"starting xccdf file loop"
+        #"starting xccdf file loop"
         #region xccdf loop
             foreach ($xccdfFile in $xccdfFiles){
 
@@ -78,15 +79,11 @@ $appendOption = [System.Windows.Forms.MessageBox]::Show('Click Yes to append, No
                             $xccdf_HOST_FQDN = ($xccdfXmlDocument.Benchmark.TestResult.'target-facts'.fact | Where-Object {$_.name -eq 'urn:scap:fact:asset:identifier:fqdn'     }).'#text' # fqdn
                             $xccdf_ROLE      = ($xccdfXmlDocument.Benchmark.TestResult.'target-facts'.fact | Where-Object {$_.name -eq 'urn:scap:fact:asset:identifier:role'     }).'#text' # role
 
-
                             #get date of scan
                             $timeValue  = ($xccdfXmlDocument.Benchmark.TestResult.'rule-result'[0].time)
                             $dateIndex  = $timeValue.IndexOf("T") 
                             $date       = $timeValue.substring(0, $dateIndex)
 
-
-
-                            
                             #region host info
 
                                 #Clean up variables to be empty strings, not null or array
@@ -126,7 +123,7 @@ $appendOption = [System.Windows.Forms.MessageBox]::Show('Click Yes to append, No
                             #endregion host info
 
                             #region set CKL vulns
-"starting ckl Vuln loop"
+                                #"starting ckl Vuln loop"
 
                                 foreach( $cklVuln in $cklXmlDocument.CHECKLIST.STIGS.iSTIG.VULN ){
                                     
@@ -149,7 +146,6 @@ $appendOption = [System.Windows.Forms.MessageBox]::Show('Click Yes to append, No
                                         $xccdffix      = $result.fix     
                                         $xccdfcheck    = $result.check   
                                         $xccdfversion  = $result.version   
-
 
                                         if($xccdfidref -eq $cklRule_ID ){ #match the rule ids
                                             
@@ -175,18 +171,10 @@ $appendOption = [System.Windows.Forms.MessageBox]::Show('Click Yes to append, No
                                                 }else{
                                                     $cklVuln.FINDING_DETAILS = $FINDING_DETAILS
                                                 }
-                                                
-                            
 
                                                 $cklVuln.STATUS = $xccdfresult
 
-
-
                                             #endregion update CKL
-
-
-
-                                                    
                                         } 
                                     } #end xccdf results loop
                                 }
@@ -208,11 +196,7 @@ $appendOption = [System.Windows.Forms.MessageBox]::Show('Click Yes to append, No
 
                             Write-Host -ForegroundColor Green " [Done] " 
 
-
-
-
                         } else {}
-
                     #endregion create CKL
                 }
             }
