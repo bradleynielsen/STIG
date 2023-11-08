@@ -1,7 +1,23 @@
 ﻿
 #"DataTables_Table_0_length"
 
+
+
+
+
+cls
 $scriptRootPath =  $PSScriptRoot
+
+
+$uri = "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Adobe_Acrobat_Pro_DC_Continuous_V2R1_STIG.zip"
+$dlPath = $scriptRootPath+"\download\U_Adobe_Acrobat_Pro_DC_Continuous_V2R1_STIG.zip"
+#$dlPath = $env:HOMEPATH+"\tempsfdsadf.bin"
+#(New-Object System.Net.WebClient).DownloadFile($uri, $dlPath)
+
+
+Invoke-WebRequest -URI $uri -OutFile $dlPath
+
+
 
 
 $webAddress =  'https://public.cyber.mil/stigs/downloads'
@@ -39,8 +55,8 @@ foreach ($tr in $trDivs){
     foreach ($td in $trChildren){
         $tdChildren = $td.children
         $lineObject = [PSCustomObject]@{
-            title = ''
-            date  = ''
+            title = '-'
+            date  = '-'
         }
         
         
