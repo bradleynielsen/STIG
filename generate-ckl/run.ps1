@@ -25,6 +25,8 @@ Compatable with: DISA STIG Viewer :: 2.17
         mkdir xccdf, ckl_templates
         $xccdfFiles   = Get-ChildItem "$scriptRootPath\xccdf"
         $cklTemplates = Get-ChildItem "$scriptRootPath\ckl_templates"
+        "CKL and XCCDF directories made. Move files into directories now and re-run script"        
+        exit
     }
 
 #endregion init
@@ -173,3 +175,5 @@ foreach ($xccdfFile in $xccdfFiles){
     }
 }
 #endregion xccdf loop
+
+
