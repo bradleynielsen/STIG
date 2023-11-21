@@ -22,7 +22,7 @@ Compatable with: DISA STIG Viewer :: 2.17
         $xccdfFiles   = Get-ChildItem "$scriptRootPath\xccdf"
         $cklTemplates = Get-ChildItem "$scriptRootPath\ckl_templates"
     } else{
-        mkdir xccdf, ckl_templates
+        mkdir xccdf, ckl_templates -ErrorAction SilentlyContinue
         $xccdfFiles   = Get-ChildItem "$scriptRootPath\xccdf"
         $cklTemplates = Get-ChildItem "$scriptRootPath\ckl_templates"
         "CKL and XCCDF directories made. Move files into directories now and re-run script"        
