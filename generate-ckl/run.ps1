@@ -11,12 +11,23 @@ Compatable with: DISA STIG Viewer :: 2.17
     $scriptRootPath     = $PSScriptRoot  # relative path where the script is     
     $count = 0
 
+    #test if source file directories exist
+
+    $xccdfPathStatus         = Test-Path "$scriptRootPath\xccdf"
+    $ckl_templatesPathStatus = Test-Path "$scriptRootPath\ckl_templates"
+
+
+    # If DIR exists, get list of files | else make them and get the list
+    if ($xccdfPathStatus -and $ckl_templatesPathStatus){
+        $xccdfFiles   = Get-ChildItem "$scriptRootPath\xccdf"
+        $cklTemplates = Get-ChildItem "$scriptRootPath\ckl_templates"
+    } else{
+        mkdir xccdf, ckl_templates
+        $xccdfFiles   = Get-ChildItem "$scriptRootPath\xccdf"
+        $cklTemplates = Get-ChildItem "$scriptRootPath\ckl_templates"
+    }
+
 #endregion init
-
-
-#get list of xccdf files
-$xccdfFiles   = Get-ChildItem "$scriptRootPath\xccdf"
-$cklTemplates = Get-ChildItem "$scriptRootPath\ckl_templates"
 
 #region xccdf loop
 
